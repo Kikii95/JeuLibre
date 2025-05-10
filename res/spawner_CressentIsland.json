@@ -1,0 +1,648 @@
+{
+  "__meta__": {
+    "legend": {
+      "id": "Identifiant unique du spawner",
+      "center": "[x, y] : position centrale autour de laquelle les entites peuvent apparaetre",
+      "radius": "Rayon de la zone de spawn",
+      "type": "\"ENEMY\", \"MERCHANT\", etc.",
+      "profileId": "Nom du profil d'entite instancier (thief, soldier...)",
+      "maxEntities": "Nombre maximum d'entites presentes en meme temps",
+      "respawnDelay": "Temps entre deux tentatives de spawn",
+      "difficultyZone": "Zone de difficulte : ZONE_EASY, ZONE_MEDIUM, ZONE_HARD",
+      "playerDespawnMargin": "Distance de despawn des mob par rapport au joueur",
+      "mobDespawnMargin": "Distance de despawn des mob par rapport a leur spawnpoint"
+    }
+  },
+  "spawners": [
+    {
+      "id": "ZONE_EASY_THIEF_1",
+      "center": [
+        0,
+        0
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "thief",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_EASY",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_MEDIUM_THIEF_2",
+      "center": [
+        1500,
+        0
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "thief",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_MEDIUM",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_HARD_THIEF_3",
+      "center": [
+        3000,
+        0
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "thief",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_HARD",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_EASY_SOLDIER_1",
+      "center": [
+        4500,
+        0
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "soldier",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_EASY",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_MEDIUM_SOLDIER_2",
+      "center": [
+        0,
+        1500
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "soldier",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_MEDIUM",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_HARD_SOLDIER_3",
+      "center": [
+        1500,
+        1500
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "soldier",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_HARD",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_EASY_CAPTAIN_1",
+      "center": [
+        3000,
+        1500
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "captain",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_EASY",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_MEDIUM_CAPTAIN_2",
+      "center": [
+        4500,
+        1500
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "captain",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_MEDIUM",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_HARD_CAPTAIN_3",
+      "center": [
+        0,
+        3000
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "captain",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_HARD",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_EASY_HUNTER_1",
+      "center": [
+        1500,
+        3000
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "hunter",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_EASY",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_MEDIUM_HUNTER_2",
+      "center": [
+        3000,
+        3000
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "hunter",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_MEDIUM",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_HARD_HUNTER_3",
+      "center": [
+        4500,
+        3000
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "hunter",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_HARD",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_EASY_HEALER_1",
+      "center": [
+        0,
+        4500
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "healer",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_EASY",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_MEDIUM_HEALER_2",
+      "center": [
+        1500,
+        4500
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "healer",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_MEDIUM",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_HARD_HEALER_3",
+      "center": [
+        3000,
+        4500
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "healer",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_HARD",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_EASY_ASSASSIN_1",
+      "center": [
+        4500,
+        4500
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "assassin",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_EASY",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_MEDIUM_ASSASSIN_2",
+      "center": [
+        0,
+        6000
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "assassin",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_MEDIUM",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_HARD_ASSASSIN_3",
+      "center": [
+        1500,
+        6000
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "assassin",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_HARD",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_EASY_BRUTE_1",
+      "center": [
+        3000,
+        6000
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "brute",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_EASY",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_MEDIUM_BRUTE_2",
+      "center": [
+        4500,
+        6000
+      ],
+      "radius": 1000,
+      "type": "ENEMY",
+      "profileId": "brute",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_MEDIUM",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_HARD_BRUTE_3",
+      "center": [
+        65,
+        -931
+      ],
+      "radius": 1250,
+      "type": "ENEMY",
+      "profileId": "brute",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_HARD",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_EASY_ARCHER_1",
+      "center": [
+        -1093,
+        247
+      ],
+      "radius": 1250,
+      "type": "ENEMY",
+      "profileId": "archer",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_EASY",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_MEDIUM_ARCHER_2",
+      "center": [
+        -172,
+        1080
+      ],
+      "radius": 1250,
+      "type": "ENEMY",
+      "profileId": "archer",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_MEDIUM",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_HARD_ARCHER_3",
+      "center": [
+        1256,
+        1308
+      ],
+      "radius": 1250,
+      "type": "ENEMY",
+      "profileId": "archer",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_HARD",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_EASY_MAGE_1",
+      "center": [
+        1187,
+        -1094
+      ],
+      "radius": 1250,
+      "type": "ENEMY",
+      "profileId": "mage",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_EASY",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_MEDIUM_MAGE_2",
+      "center": [
+        -934,
+        3014
+      ],
+      "radius": 1250,
+      "type": "ENEMY",
+      "profileId": "mage",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_MEDIUM",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_HARD_MAGE_3",
+      "center": [
+        2656,
+        1014
+      ],
+      "radius": 1250,
+      "type": "ENEMY",
+      "profileId": "mage",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_HARD",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_EASY_PYROMANCER_1",
+      "center": [
+        -331,
+        546
+      ],
+      "radius": 1250,
+      "type": "ENEMY",
+      "profileId": "pyromancer",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_EASY",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_MEDIUM_PYROMANCER_2",
+      "center": [
+        1063,
+        95
+      ],
+      "radius": 1250,
+      "type": "ENEMY",
+      "profileId": "pyromancer",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_MEDIUM",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_HARD_PYROMANCER_3",
+      "center": [
+        2632,
+        -260
+      ],
+      "radius": 1250,
+      "type": "ENEMY",
+      "profileId": "pyromancer",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_HARD",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_EASY_SHAMAN_1",
+      "center": [
+        -987,
+        -1108
+      ],
+      "radius": 1250,
+      "type": "ENEMY",
+      "profileId": "shaman",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_EASY",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_MEDIUM_SHAMAN_2",
+      "center": [
+        -237,
+        2824
+      ],
+      "radius": 1250,
+      "type": "ENEMY",
+      "profileId": "shaman",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_MEDIUM",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_HARD_SHAMAN_3",
+      "center": [
+        1927,
+        -1078
+      ],
+      "radius": 1250,
+      "type": "ENEMY",
+      "profileId": "shaman",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_HARD",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_EASY_BEASTMASTER_1",
+      "center": [
+        1144,
+        -365
+      ],
+      "radius": 1250,
+      "type": "ENEMY",
+      "profileId": "beastmaster",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_EASY",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_MEDIUM_BEASTMASTER_2",
+      "center": [
+        -1228,
+        1129
+      ],
+      "radius": 1250,
+      "type": "ENEMY",
+      "profileId": "beastmaster",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_MEDIUM",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_HARD_BEASTMASTER_3",
+      "center": [
+        837,
+        -1202
+      ],
+      "radius": 1250,
+      "type": "ENEMY",
+      "profileId": "beastmaster",
+      "maxEntities": 3,
+      "respawnDelay": 10.0,
+      "difficultyZone": "ZONE_HARD",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_BOSS_SHADOWBLADE",
+      "center": [
+        3001,
+        705
+      ],
+      "radius": 800,
+      "type": "ENEMY",
+      "profileId": "shadowblade",
+      "maxEntities": 1,
+      "respawnDelay": 25.0,
+      "difficultyZone": "ZONE_BOSS",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_CHAMPION_SHADOWBLADE",
+      "center": [
+        2893,
+        2710
+      ],
+      "radius": 800,
+      "type": "ENEMY",
+      "profileId": "shadowblade",
+      "maxEntities": 1,
+      "respawnDelay": 25.0,
+      "difficultyZone": "ZONE_CHAMPION",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_BOSS_NECROMANCER",
+      "center": [
+        1569,
+        1146
+      ],
+      "radius": 800,
+      "type": "ENEMY",
+      "profileId": "necromancer",
+      "maxEntities": 1,
+      "respawnDelay": 25.0,
+      "difficultyZone": "ZONE_BOSS",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_CHAMPION_NECROMANCER",
+      "center": [
+        2124,
+        2628
+      ],
+      "radius": 800,
+      "type": "ENEMY",
+      "profileId": "necromancer",
+      "maxEntities": 1,
+      "respawnDelay": 25.0,
+      "difficultyZone": "ZONE_CHAMPION",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_BOSS_GUARDIAN",
+      "center": [
+        2403,
+        3671
+      ],
+      "radius": 800,
+      "type": "ENEMY",
+      "profileId": "guardian",
+      "maxEntities": 1,
+      "respawnDelay": 25.0,
+      "difficultyZone": "ZONE_BOSS",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    },
+    {
+      "id": "ZONE_CHAMPION_GUARDIAN",
+      "center": [
+        1962,
+        3941
+      ],
+      "radius": 800,
+      "type": "ENEMY",
+      "profileId": "guardian",
+      "maxEntities": 1,
+      "respawnDelay": 25.0,
+      "difficultyZone": "ZONE_CHAMPION",
+      "playerDespawnMargin": 2500,
+      "mobDespawnMargin": 1000
+    }
+  ]
+}

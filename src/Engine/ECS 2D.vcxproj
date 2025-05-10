@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c9966821-0feb-4e82-9ec5-32ad6774ccb6}</ProjectGuid>
+    <RootNamespace>ECS2D</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\SFML-2.5.1\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-audio-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ActionDefinition.cpp" />
+    <ClCompile Include="ActionDatabase.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="ComponentAction.cpp" />
+    <ClCompile Include="ComponentAI.cpp" />
+    <ClCompile Include="ComponentAudio.cpp" />
+    <ClCompile Include="ComponentBuffDebuff.cpp" />
+    <ClCompile Include="ComponentCamera.cpp" />
+    <ClCompile Include="ComponentCollider.cpp" />
+    <ClCompile Include="ComponentCombat.cpp" />
+    <ClCompile Include="ComponentCrewMember.cpp" />
+    <ClCompile Include="ComponentDialogue.cpp" />
+    <ClCompile Include="ComponentDifficulty.cpp" />
+    <ClCompile Include="ComponentEvent.cpp" />
+    <ClCompile Include="ComponentFaction.cpp" />
+    <ClCompile Include="ComponentFogOfWar.cpp" />
+    <ClCompile Include="ComponentHealth.cpp" />
+    <ClCompile Include="ComponentInput.cpp" />
+    <ClCompile Include="ComponentInventory.cpp" />
+    <ClCompile Include="ComponentLoot.cpp" />
+    <ClCompile Include="ComponentMerchant.cpp" />
+    <ClCompile Include="ComponentMoney.cpp" />
+    <ClCompile Include="ComponentNavire.cpp" />
+    <ClCompile Include="ComponentPhysics.cpp" />
+    <ClCompile Include="ComponentProjectile.cpp" />
+    <ClCompile Include="ComponentQuest.cpp" />
+    <ClCompile Include="ComponentRender.cpp" />
+    <ClCompile Include="ComponentReputation.cpp" />
+    <ClCompile Include="ComponentState.cpp" />
+    <ClCompile Include="ComponentStats.cpp" />
+    <ClCompile Include="ComponentTag.cpp" />
+    <ClCompile Include="ComponentTransform.cpp" />
+    <ClCompile Include="ComponentTurnOrder.cpp" />
+    <ClCompile Include="ComponentWeapon.cpp" />
+    <ClCompile Include="EffectDatabase.cpp" />
+    <ClCompile Include="EffectDefinition.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="EntityManager.cpp" />
+    <ClCompile Include="GameEngine.cpp" />
+    <ClCompile Include="GameLogicManager.cpp" />
+    <ClCompile Include="GameTimer.cpp" />
+    <ClCompile Include="HexDirection.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="ItemDatabase.cpp" />
+    <ClCompile Include="ItemDefinition.cpp" />
+    <ClCompile Include="ItemInstance.cpp" />
+    <ClCompile Include="Logs.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="StatsDatabase.cpp" />
+    <ClCompile Include="StatsDefinition.cpp" />
+    <ClCompile Include="System.cpp" />
+    <ClCompile Include="SystemAction.cpp" />
+    <ClCompile Include="SystemBuffDebuff.cpp" />
+    <ClCompile Include="SystemCamera.cpp" />
+    <ClCompile Include="SystemCollision.cpp" />
+    <ClCompile Include="SystemCombat.cpp" />
+    <ClCompile Include="SystemCrewManagement.cpp" />
+    <ClCompile Include="SystemDialogue.cpp" />
+    <ClCompile Include="SystemDifficulty.cpp" />
+    <ClCompile Include="SystemEvent.cpp" />
+    <ClCompile Include="SystemFaction.cpp" />
+    <ClCompile Include="SystemFogOfWar.cpp" />
+    <ClCompile Include="SystemHealth.cpp" />
+    <ClCompile Include="SystemInventory.cpp" />
+    <ClCompile Include="SystemLoot.cpp" />
+    <ClCompile Include="SystemManager.cpp" />
+    <ClCompile Include="SystemMerchant.cpp" />
+    <ClCompile Include="SystemMoney.cpp" />
+    <ClCompile Include="SystemNavire.cpp" />
+    <ClCompile Include="SystemPhysics.cpp" />
+    <ClCompile Include="SystemProjectile.cpp" />
+    <ClCompile Include="SystemQuest.cpp" />
+    <ClCompile Include="SystemRender.cpp" />
+    <ClCompile Include="SystemReputation.cpp" />
+    <ClCompile Include="SystemTurnOrder.cpp" />
+    <ClCompile Include="SystemWeapon.cpp" />
+    <ClCompile Include="ToolBox.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActionDefinition.h" />
+    <ClInclude Include="ActionDatabase.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="ComponentAction.h" />
+    <ClInclude Include="ComponentAI.h" />
+    <ClInclude Include="ComponentAudio.h" />
+    <ClInclude Include="ComponentBuffDebuff.h" />
+    <ClInclude Include="ComponentCamera.h" />
+    <ClInclude Include="ComponentCollider.h" />
+    <ClInclude Include="ComponentCombat.h" />
+    <ClInclude Include="ComponentCrewMember.h" />
+    <ClInclude Include="ComponentDialogue.h" />
+    <ClInclude Include="ComponentDifficulty.h" />
+    <ClInclude Include="ComponentEvent.h" />
+    <ClInclude Include="ComponentFaction.h" />
+    <ClInclude Include="ComponentFogOfWar.h" />
+    <ClInclude Include="ComponentHealth.h" />
+    <ClInclude Include="ComponentInput.h" />
+    <ClInclude Include="ComponentInventory.h" />
+    <ClInclude Include="ComponentLoot.h" />
+    <ClInclude Include="ComponentMerchant.h" />
+    <ClInclude Include="ComponentMoney.h" />
+    <ClInclude Include="ComponentNavire.h" />
+    <ClInclude Include="ComponentPhysics.h" />
+    <ClInclude Include="ComponentProjectile.h" />
+    <ClInclude Include="ComponentQuest.h" />
+    <ClInclude Include="ComponentRender.h" />
+    <ClInclude Include="ComponentReputation.h" />
+    <ClInclude Include="ComponentState.h" />
+    <ClInclude Include="ComponentStats.h" />
+    <ClInclude Include="ComponentTag.h" />
+    <ClInclude Include="ComponentTransform.h" />
+    <ClInclude Include="ComponentTurnOrder.h" />
+    <ClInclude Include="ComponentWeapon.h" />
+    <ClInclude Include="EffectDatabase.h" />
+    <ClInclude Include="EffectDefinition.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="EntityManager.h" />
+    <ClInclude Include="GameEngine.h" />
+    <ClInclude Include="GameLogicManager.h" />
+    <ClInclude Include="GameTimer.h" />
+    <ClInclude Include="HexDirection.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="ItemDatabase.h" />
+    <ClInclude Include="ItemDefinition.h" />
+    <ClInclude Include="ItemInstance.h" />
+    <ClInclude Include="Logs.h" />
+    <ClInclude Include="StatsDatabase.h" />
+    <ClInclude Include="StatsDefinition.h" />
+    <ClInclude Include="System.h" />
+    <ClInclude Include="SystemAction.h" />
+    <ClInclude Include="SystemBuffDebuff.h" />
+    <ClInclude Include="SystemCamera.h" />
+    <ClInclude Include="SystemCollision.h" />
+    <ClInclude Include="SystemCombat.h" />
+    <ClInclude Include="SystemCrewManagement.h" />
+    <ClInclude Include="SystemDialogue.h" />
+    <ClInclude Include="SystemDifficulty.h" />
+    <ClInclude Include="SystemEvent.h" />
+    <ClInclude Include="SystemFaction.h" />
+    <ClInclude Include="SystemFogOfWar.h" />
+    <ClInclude Include="SystemHealth.h" />
+    <ClInclude Include="SystemInventory.h" />
+    <ClInclude Include="SystemLoot.h" />
+    <ClInclude Include="SystemManager.h" />
+    <ClInclude Include="SystemMerchant.h" />
+    <ClInclude Include="SystemMoney.h" />
+    <ClInclude Include="SystemNavire.h" />
+    <ClInclude Include="SystemPhysics.h" />
+    <ClInclude Include="SystemProjectile.h" />
+    <ClInclude Include="SystemQuest.h" />
+    <ClInclude Include="SystemRender.h" />
+    <ClInclude Include="SystemReputation.h" />
+    <ClInclude Include="SystemTurnOrder.h" />
+    <ClInclude Include="SystemWeapon.h" />
+    <ClInclude Include="ToolBox.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Entity.inl" />
+    <None Include="SystemManager.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

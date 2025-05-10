@@ -1,0 +1,2891 @@
+{
+  "__meta__": {
+    "legend": {
+      "id": "Identifiant unique de l'objet (utilise comme reference)",
+      "name": "Nom affiche de l'objet",
+      "description": "Texte descriptif, affiche a l'inspection",
+      "type": "Type d'objet : Generic, Weapon, Consumable, Resource, Trophy, QuestItem",
+      "weight": "Poids unitaire (en kg)",
+      "basePrice": "Prix de base en or",
+      "stackable": "true/false si l'objet peut etre empile",
+      "damage": "Degats (si Weapon)",
+      "range": "Portee (si Weapon)",
+      "effectId": "Effet special applique (si Consumable ou Trophy)"
+    }
+  },
+  "items": [
+    {
+      "id": "weapon_sword_rusty",
+      "name": "Epee Rouillee",
+      "description": "Une vieille epee emoussee, peu efficace mais mieux que rien.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 2.5,
+      "basePrice": 10,
+      "stackable": false,
+      "damage": 5,
+      "range": 1,
+      "effects": [
+        "bless_luck_v5",
+        "curse_weakness_v3"
+      ]
+    },
+    {
+      "id": "weapon_bow_basic",
+      "name": "Arc Simple",
+      "description": "Un arc rudimentaire fabrique avec du bois de mauvaise qualite.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 1.2,
+      "basePrice": 15,
+      "stackable": false,
+      "damage": 4,
+      "range": 5,
+      "effects": [
+        "boost_attack_v5"
+      ]
+    },
+    {
+      "id": "weapon_axe_woodcutter",
+      "name": "Hache de Bucheron",
+      "description": "Principalement utilisee pour couper du bois, mais peut aussi faire mal.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 3.0,
+      "basePrice": 12,
+      "stackable": false,
+      "damage": 6,
+      "range": 1,
+      "effects": [
+        "bless_luck_v2"
+      ]
+    },
+    {
+      "id": "weapon_dagger_iron",
+      "name": "Dague en Fer",
+      "description": "Une petite lame rapide mais peu puissante.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 1.0,
+      "basePrice": 8,
+      "stackable": false,
+      "damage": 3,
+      "range": 1,
+      "effectId": "poison_strong"
+    },
+    {
+      "id": "consumable_heal_potion_small",
+      "name": "Petite Potion de Soin",
+      "description": "Restaure une petite quantite de PV.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.5,
+      "basePrice": 10,
+      "stackable": true,
+      "effectId": "heal_small",
+      "effects": [
+        "regen_medium_v1",
+        "poison_small_v4"
+      ]
+    },
+    {
+      "id": "consumable_heal_food_meat",
+      "name": "Viande Rotie",
+      "description": "Un repas chaud qui restaure un peu de sante.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.8,
+      "basePrice": 5,
+      "stackable": true,
+      "effectId": "regen_medium"
+    },
+    {
+      "id": "consumable_buff_herbal_tea",
+      "name": "Tisane Tonifiante",
+      "description": "Augmente legerement la regeneration pendant un moment.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.3,
+      "basePrice": 7,
+      "stackable": true,
+      "effectId": "boost_crit"
+    },
+    {
+      "id": "consumable_buff_energy_drink",
+      "name": "Boisson energisante",
+      "description": "Accelere les mouvements temporairement.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.4,
+      "basePrice": 9,
+      "stackable": true,
+      "effectId": "boost_attack"
+    },
+    {
+      "id": "resource_mineral_iron_ore",
+      "name": "Minerai de Fer",
+      "description": "Un morceau brut de minerai de fer.",
+      "type": "Resource",
+      "weight": 3.0,
+      "basePrice": 6,
+      "stackable": true,
+      "effects": [
+        "boost_crit_v5"
+      ]
+    },
+    {
+      "id": "resource_wood_oak_log",
+      "name": "Buche de Chene",
+      "description": "Solide et dense, parfaite pour construire ou bruler.",
+      "type": "Resource",
+      "weight": 2.0,
+      "basePrice": 4,
+      "stackable": true
+    },
+    {
+      "id": "resource_fish_trout",
+      "name": "Truite Fraiche",
+      "description": "Un poisson delicieux, encore fretillant.",
+      "type": "Resource",
+      "weight": 1.0,
+      "basePrice": 3,
+      "stackable": true
+    },
+    {
+      "id": "resource_herb_healing",
+      "name": "Herbe Medicinale",
+      "description": "Utilisee pour concocter des potions de soin.",
+      "type": "Resource",
+      "weight": 0.2,
+      "basePrice": 2,
+      "stackable": true,
+      "effects": [
+        "curse_weakness_v3",
+        "curse_weakness_v5"
+      ]
+    },
+    {
+      "id": "armor_helmet_leather",
+      "name": "Casque en Cuir",
+      "description": "Protege legerement la tete contre les coups.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 1.0,
+      "basePrice": 10,
+      "stackable": false,
+      "effectId": "armor_head_light"
+    },
+    {
+      "id": "armor_outfit_leather",
+      "name": "Tenue en Cuir",
+      "description": "Une protection corporelle souple en cuir tanne.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 3.0,
+      "basePrice": 20,
+      "stackable": false,
+      "effectId": "armor_body_light",
+      "effects": [
+        "heal_small"
+      ]
+    },
+    {
+      "id": "armor_helmet_iron",
+      "name": "Casque en Fer",
+      "description": "Protection robuste pour la tete.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 2.5,
+      "basePrice": 18,
+      "stackable": false,
+      "effectId": "armor_head_medium"
+    },
+    {
+      "id": "armor_outfit_chainmail",
+      "name": "Cotte de Mailles",
+      "description": "Offre une bonne defense contre les attaques physiques.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 6.0,
+      "basePrice": 35,
+      "stackable": false,
+      "effectId": "armor_body_medium"
+    },
+    {
+      "id": "weapon_sword_rusty_var1",
+      "name": "Epee Rouillee (v1)",
+      "description": "Une vieille epee emoussee, peu efficace mais mieux que rien.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 2.3,
+      "basePrice": 14.59,
+      "stackable": false,
+      "damage": 7,
+      "range": 1,
+      "effects": [
+        "boost_attack"
+      ]
+    },
+    {
+      "id": "weapon_sword_rusty_var2",
+      "name": "Epee Rouillee (v2)",
+      "description": "Une vieille epee emoussee, peu efficace mais mieux que rien.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 3.12,
+      "basePrice": 14.59,
+      "stackable": false,
+      "damage": 5,
+      "range": 1,
+      "effects": [
+        "heal_small_v4",
+        "boost_attack_v5"
+      ]
+    },
+    {
+      "id": "weapon_sword_rusty_var3",
+      "name": "Epee Rouillee (v3)",
+      "description": "Une vieille epee emoussee, peu efficace mais mieux que rien.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 2.21,
+      "basePrice": 9.44,
+      "stackable": false,
+      "damage": 6,
+      "range": 1
+    },
+    {
+      "id": "weapon_sword_rusty_var4",
+      "name": "Epee Rouillee (v4)",
+      "description": "Une vieille epee emoussee, peu efficace mais mieux que rien.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 2.86,
+      "basePrice": 13.27,
+      "stackable": false,
+      "damage": 5,
+      "range": 1,
+      "effects": [
+        "heal_small_v2",
+        "heal_small_v4"
+      ]
+    },
+    {
+      "id": "weapon_sword_rusty_var5",
+      "name": "Epee Rouillee (v5)",
+      "description": "Une vieille epee emoussee, peu efficace mais mieux que rien.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 2.72,
+      "basePrice": 14.58,
+      "stackable": false,
+      "damage": 7,
+      "range": 1,
+      "effects": [
+        "boost_attack"
+      ]
+    },
+    {
+      "id": "weapon_sword_rusty_var6",
+      "name": "Epee Rouillee (v6)",
+      "description": "Une vieille epee emoussee, peu efficace mais mieux que rien.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 2.23,
+      "basePrice": 8.74,
+      "stackable": false,
+      "damage": 6,
+      "range": 1
+    },
+    {
+      "id": "weapon_sword_rusty_var7",
+      "name": "Epee Rouillee (v7)",
+      "description": "Une vieille epee emoussee, peu efficace mais mieux que rien.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 2.21,
+      "basePrice": 14.77,
+      "stackable": false,
+      "damage": 5,
+      "range": 1
+    },
+    {
+      "id": "weapon_sword_rusty_var8",
+      "name": "Epee Rouillee (v8)",
+      "description": "Une vieille epee emoussee, peu efficace mais mieux que rien.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 3.12,
+      "basePrice": 11.2,
+      "stackable": false,
+      "damage": 6,
+      "range": 1
+    },
+    {
+      "id": "weapon_sword_rusty_var9",
+      "name": "Epee Rouillee (v9)",
+      "description": "Une vieille epee emoussee, peu efficace mais mieux que rien.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 2.73,
+      "basePrice": 10.51,
+      "stackable": false,
+      "damage": 7,
+      "range": 1
+    },
+    {
+      "id": "weapon_sword_rusty_var10",
+      "name": "Epee Rouillee (v10)",
+      "description": "Une vieille epee emoussee, peu efficace mais mieux que rien.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 2.29,
+      "basePrice": 14.49,
+      "stackable": false,
+      "damage": 5,
+      "range": 1,
+      "effects": [
+        "heal_small_v1"
+      ]
+    },
+    {
+      "id": "weapon_bow_basic_var1",
+      "name": "Arc Simple (v1)",
+      "description": "Un arc rudimentaire fabrique avec du bois de mauvaise qualite.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 1.15,
+      "basePrice": 16.95,
+      "stackable": false,
+      "damage": 4,
+      "range": 5,
+      "effects": [
+        "burn_v4",
+        "regen_medium_v5"
+      ]
+    },
+    {
+      "id": "weapon_bow_basic_var2",
+      "name": "Arc Simple (v2)",
+      "description": "Un arc rudimentaire fabrique avec du bois de mauvaise qualite.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 1.49,
+      "basePrice": 13.2,
+      "stackable": false,
+      "damage": 5,
+      "range": 5
+    },
+    {
+      "id": "weapon_bow_basic_var3",
+      "name": "Arc Simple (v3)",
+      "description": "Un arc rudimentaire fabrique avec du bois de mauvaise qualite.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 1.29,
+      "basePrice": 21.73,
+      "stackable": false,
+      "damage": 4,
+      "range": 5
+    },
+    {
+      "id": "weapon_bow_basic_var4",
+      "name": "Arc Simple (v4)",
+      "description": "Un arc rudimentaire fabrique avec du bois de mauvaise qualite.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 1.47,
+      "basePrice": 14.38,
+      "stackable": false,
+      "damage": 4,
+      "range": 5,
+      "effects": [
+        "boost_attack_v4",
+        "poison_strong_v1"
+      ]
+    },
+    {
+      "id": "weapon_bow_basic_var5",
+      "name": "Arc Simple (v5)",
+      "description": "Un arc rudimentaire fabrique avec du bois de mauvaise qualite.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 1.5,
+      "basePrice": 13.46,
+      "stackable": false,
+      "damage": 5,
+      "range": 5,
+      "effects": [
+        "curse_weakness_v4"
+      ]
+    },
+    {
+      "id": "weapon_bow_basic_var6",
+      "name": "Arc Simple (v6)",
+      "description": "Un arc rudimentaire fabrique avec du bois de mauvaise qualite.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 1.31,
+      "basePrice": 15.86,
+      "stackable": false,
+      "damage": 4,
+      "range": 5,
+      "effects": [
+        "boost_attack_v3",
+        "boost_defense_v4"
+      ]
+    },
+    {
+      "id": "weapon_bow_basic_var7",
+      "name": "Arc Simple (v7)",
+      "description": "Un arc rudimentaire fabrique avec du bois de mauvaise qualite.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 1.06,
+      "basePrice": 13.29,
+      "stackable": false,
+      "damage": 5,
+      "range": 5,
+      "effects": [
+        "burn_v2",
+        "regen_medium_v3"
+      ]
+    },
+    {
+      "id": "weapon_bow_basic_var8",
+      "name": "Arc Simple (v8)",
+      "description": "Un arc rudimentaire fabrique avec du bois de mauvaise qualite.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 1.39,
+      "basePrice": 14.15,
+      "stackable": false,
+      "damage": 5,
+      "range": 5,
+      "effects": [
+        "boost_attack_v5",
+        "burn_v5"
+      ]
+    },
+    {
+      "id": "weapon_bow_basic_var9",
+      "name": "Arc Simple (v9)",
+      "description": "Un arc rudimentaire fabrique avec du bois de mauvaise qualite.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 1.12,
+      "basePrice": 22.33,
+      "stackable": false,
+      "damage": 5,
+      "range": 5
+    },
+    {
+      "id": "weapon_bow_basic_var10",
+      "name": "Arc Simple (v10)",
+      "description": "Un arc rudimentaire fabrique avec du bois de mauvaise qualite.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 1.22,
+      "basePrice": 21.9,
+      "stackable": false,
+      "damage": 5,
+      "range": 5
+    },
+    {
+      "id": "weapon_axe_woodcutter_var1",
+      "name": "Hache de Bucheron (v1)",
+      "description": "Principalement utilisee pour couper du bois, mais peut aussi faire mal.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 2.51,
+      "basePrice": 11.72,
+      "stackable": false,
+      "damage": 8,
+      "range": 1
+    },
+    {
+      "id": "weapon_axe_woodcutter_var2",
+      "name": "Hache de Bucheron (v2)",
+      "description": "Principalement utilisee pour couper du bois, mais peut aussi faire mal.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 3.53,
+      "basePrice": 17.28,
+      "stackable": false,
+      "damage": 7,
+      "range": 1
+    },
+    {
+      "id": "weapon_axe_woodcutter_var3",
+      "name": "Hache de Bucheron (v3)",
+      "description": "Principalement utilisee pour couper du bois, mais peut aussi faire mal.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 3.22,
+      "basePrice": 12.43,
+      "stackable": false,
+      "damage": 5,
+      "range": 1,
+      "effects": [
+        "poison_small_v3"
+      ]
+    },
+    {
+      "id": "weapon_axe_woodcutter_var4",
+      "name": "Hache de Bucheron (v4)",
+      "description": "Principalement utilisee pour couper du bois, mais peut aussi faire mal.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 2.88,
+      "basePrice": 12.95,
+      "stackable": false,
+      "damage": 6,
+      "range": 1,
+      "effects": [
+        "boost_crit_v2",
+        "boost_crit_v4"
+      ]
+    },
+    {
+      "id": "weapon_axe_woodcutter_var5",
+      "name": "Hache de Bucheron (v5)",
+      "description": "Principalement utilisee pour couper du bois, mais peut aussi faire mal.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 3.74,
+      "basePrice": 9.63,
+      "stackable": false,
+      "damage": 5,
+      "range": 1,
+      "effects": [
+        "heal_small_v3",
+        "burn_v3"
+      ]
+    },
+    {
+      "id": "weapon_axe_woodcutter_var6",
+      "name": "Hache de Bucheron (v6)",
+      "description": "Principalement utilisee pour couper du bois, mais peut aussi faire mal.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 3.12,
+      "basePrice": 16.98,
+      "stackable": false,
+      "damage": 7,
+      "range": 1,
+      "effects": [
+        "curse_weakness_v1",
+        "poison_small_v3"
+      ]
+    },
+    {
+      "id": "weapon_axe_woodcutter_var7",
+      "name": "Hache de Bucheron (v7)",
+      "description": "Principalement utilisee pour couper du bois, mais peut aussi faire mal.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 3.08,
+      "basePrice": 12.98,
+      "stackable": false,
+      "damage": 7,
+      "range": 1,
+      "effects": [
+        "curse_weakness_v4",
+        "bless_luck_v5"
+      ]
+    },
+    {
+      "id": "weapon_axe_woodcutter_var8",
+      "name": "Hache de Bucheron (v8)",
+      "description": "Principalement utilisee pour couper du bois, mais peut aussi faire mal.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 2.42,
+      "basePrice": 12.19,
+      "stackable": false,
+      "damage": 5,
+      "range": 1,
+      "effects": [
+        "boost_crit_v2"
+      ]
+    },
+    {
+      "id": "weapon_axe_woodcutter_var9",
+      "name": "Hache de Bucheron (v9)",
+      "description": "Principalement utilisee pour couper du bois, mais peut aussi faire mal.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 3.6,
+      "basePrice": 13.54,
+      "stackable": false,
+      "damage": 7,
+      "range": 1,
+      "effects": [
+        "poison_strong_v1"
+      ]
+    },
+    {
+      "id": "weapon_axe_woodcutter_var10",
+      "name": "Hache de Bucheron (v10)",
+      "description": "Principalement utilisee pour couper du bois, mais peut aussi faire mal.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 2.92,
+      "basePrice": 13.69,
+      "stackable": false,
+      "damage": 5,
+      "range": 1
+    },
+    {
+      "id": "weapon_dagger_iron_var1",
+      "name": "Dague en Fer (v1)",
+      "description": "Une petite lame rapide mais peu puissante.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 0.88,
+      "basePrice": 9.59,
+      "stackable": false,
+      "damage": 3,
+      "range": 1,
+      "effectId": "poison_strong",
+      "effects": [
+        "boost_attack",
+        "boost_attack_v5"
+      ]
+    },
+    {
+      "id": "weapon_dagger_iron_var2",
+      "name": "Dague en Fer (v2)",
+      "description": "Une petite lame rapide mais peu puissante.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 1.25,
+      "basePrice": 7.53,
+      "stackable": false,
+      "damage": 4,
+      "range": 1,
+      "effectId": "poison_strong"
+    },
+    {
+      "id": "weapon_dagger_iron_var3",
+      "name": "Dague en Fer (v3)",
+      "description": "Une petite lame rapide mais peu puissante.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 0.96,
+      "basePrice": 7.62,
+      "stackable": false,
+      "damage": 2,
+      "range": 1,
+      "effectId": "poison_strong"
+    },
+    {
+      "id": "weapon_dagger_iron_var4",
+      "name": "Dague en Fer (v4)",
+      "description": "Une petite lame rapide mais peu puissante.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 0.94,
+      "basePrice": 9.81,
+      "stackable": false,
+      "damage": 3,
+      "range": 1,
+      "effectId": "poison_strong"
+    },
+    {
+      "id": "weapon_dagger_iron_var5",
+      "name": "Dague en Fer (v5)",
+      "description": "Une petite lame rapide mais peu puissante.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 1.18,
+      "basePrice": 10.27,
+      "stackable": false,
+      "damage": 3,
+      "range": 1,
+      "effectId": "poison_strong",
+      "effects": [
+        "boost_defense",
+        "curse_weakness_v3"
+      ]
+    },
+    {
+      "id": "weapon_dagger_iron_var6",
+      "name": "Dague en Fer (v6)",
+      "description": "Une petite lame rapide mais peu puissante.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 0.8,
+      "basePrice": 9.87,
+      "stackable": false,
+      "damage": 3,
+      "range": 1,
+      "effectId": "poison_strong"
+    },
+    {
+      "id": "weapon_dagger_iron_var7",
+      "name": "Dague en Fer (v7)",
+      "description": "Une petite lame rapide mais peu puissante.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 1.25,
+      "basePrice": 6.68,
+      "stackable": false,
+      "damage": 4,
+      "range": 1,
+      "effectId": "poison_strong",
+      "effects": [
+        "heal_small_v4",
+        "boost_crit_v4"
+      ]
+    },
+    {
+      "id": "weapon_dagger_iron_var8",
+      "name": "Dague en Fer (v8)",
+      "description": "Une petite lame rapide mais peu puissante.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 0.86,
+      "basePrice": 7.13,
+      "stackable": false,
+      "damage": 3,
+      "range": 1,
+      "effectId": "poison_strong"
+    },
+    {
+      "id": "weapon_dagger_iron_var9",
+      "name": "Dague en Fer (v9)",
+      "description": "Une petite lame rapide mais peu puissante.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 0.84,
+      "basePrice": 9.87,
+      "stackable": false,
+      "damage": 2,
+      "range": 1,
+      "effectId": "poison_strong",
+      "effects": [
+        "bless_luck_v3"
+      ]
+    },
+    {
+      "id": "weapon_dagger_iron_var10",
+      "name": "Dague en Fer (v10)",
+      "description": "Une petite lame rapide mais peu puissante.",
+      "type": "Weapon",
+      "equipmentSlot": "Weapon",
+      "weight": 1.06,
+      "basePrice": 11.35,
+      "stackable": false,
+      "damage": 4,
+      "range": 1,
+      "effectId": "poison_strong"
+    },
+    {
+      "id": "consumable_heal_potion_small_var1",
+      "name": "Petite Potion de Soin (v1)",
+      "description": "Restaure une petite quantite de PV.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.59,
+      "basePrice": 11.4,
+      "stackable": true,
+      "effectId": "heal_small",
+      "effects": [
+        "regen_medium_v2"
+      ]
+    },
+    {
+      "id": "consumable_heal_potion_small_var2",
+      "name": "Petite Potion de Soin (v2)",
+      "description": "Restaure une petite quantite de PV.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.53,
+      "basePrice": 13.72,
+      "stackable": true,
+      "effectId": "heal_small",
+      "effects": [
+        "bless_luck_v3",
+        "heal_small_v5"
+      ]
+    },
+    {
+      "id": "consumable_heal_potion_small_var3",
+      "name": "Petite Potion de Soin (v3)",
+      "description": "Restaure une petite quantite de PV.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.45,
+      "basePrice": 14.14,
+      "stackable": true,
+      "effectId": "heal_small",
+      "effects": [
+        "bless_luck_v5",
+        "poison_small_v5"
+      ]
+    },
+    {
+      "id": "consumable_heal_potion_small_var4",
+      "name": "Petite Potion de Soin (v4)",
+      "description": "Restaure une petite quantite de PV.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.51,
+      "basePrice": 9.69,
+      "stackable": true,
+      "effectId": "heal_small"
+    },
+    {
+      "id": "consumable_heal_potion_small_var5",
+      "name": "Petite Potion de Soin (v5)",
+      "description": "Restaure une petite quantite de PV.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.64,
+      "basePrice": 8.13,
+      "stackable": true,
+      "effectId": "heal_small"
+    },
+    {
+      "id": "consumable_heal_potion_small_var6",
+      "name": "Petite Potion de Soin (v6)",
+      "description": "Restaure une petite quantite de PV.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.6,
+      "basePrice": 8.11,
+      "stackable": true,
+      "effectId": "heal_small",
+      "effects": [
+        "poison_strong_v4"
+      ]
+    },
+    {
+      "id": "consumable_heal_potion_small_var7",
+      "name": "Petite Potion de Soin (v7)",
+      "description": "Restaure une petite quantite de PV.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.41,
+      "basePrice": 10.83,
+      "stackable": true,
+      "effectId": "heal_small",
+      "effects": [
+        "heal_small_v3",
+        "boost_attack_v5"
+      ]
+    },
+    {
+      "id": "consumable_heal_potion_small_var8",
+      "name": "Petite Potion de Soin (v8)",
+      "description": "Restaure une petite quantite de PV.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.46,
+      "basePrice": 10.0,
+      "stackable": true,
+      "effectId": "heal_small"
+    },
+    {
+      "id": "consumable_heal_potion_small_var9",
+      "name": "Petite Potion de Soin (v9)",
+      "description": "Restaure une petite quantite de PV.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.53,
+      "basePrice": 8.81,
+      "stackable": true,
+      "effectId": "heal_small",
+      "effects": [
+        "boost_attack"
+      ]
+    },
+    {
+      "id": "consumable_heal_potion_small_var10",
+      "name": "Petite Potion de Soin (v10)",
+      "description": "Restaure une petite quantite de PV.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.52,
+      "basePrice": 14.56,
+      "stackable": true,
+      "effectId": "heal_small",
+      "effects": [
+        "heal_small_v3"
+      ]
+    },
+    {
+      "id": "consumable_heal_food_meat_var1",
+      "name": "Viande Rotie (v1)",
+      "description": "Un repas chaud qui restaure un peu de sante.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.96,
+      "basePrice": 5.98,
+      "stackable": true,
+      "effectId": "regen_medium",
+      "effects": [
+        "burn_v3"
+      ]
+    },
+    {
+      "id": "consumable_heal_food_meat_var2",
+      "name": "Viande Rotie (v2)",
+      "description": "Un repas chaud qui restaure un peu de sante.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.91,
+      "basePrice": 6.29,
+      "stackable": true,
+      "effectId": "regen_medium",
+      "effects": [
+        "poison_small_v5"
+      ]
+    },
+    {
+      "id": "consumable_heal_food_meat_var3",
+      "name": "Viande Rotie (v3)",
+      "description": "Un repas chaud qui restaure un peu de sante.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.94,
+      "basePrice": 6.89,
+      "stackable": true,
+      "effectId": "regen_medium",
+      "effects": [
+        "poison_small_v2"
+      ]
+    },
+    {
+      "id": "consumable_heal_food_meat_var4",
+      "name": "Viande Rotie (v4)",
+      "description": "Un repas chaud qui restaure un peu de sante.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.94,
+      "basePrice": 4.8,
+      "stackable": true,
+      "effectId": "regen_medium"
+    },
+    {
+      "id": "consumable_heal_food_meat_var5",
+      "name": "Viande Rotie (v5)",
+      "description": "Un repas chaud qui restaure un peu de sante.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.66,
+      "basePrice": 4.58,
+      "stackable": true,
+      "effectId": "regen_medium"
+    },
+    {
+      "id": "consumable_heal_food_meat_var6",
+      "name": "Viande Rotie (v6)",
+      "description": "Un repas chaud qui restaure un peu de sante.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.84,
+      "basePrice": 4.43,
+      "stackable": true,
+      "effectId": "regen_medium"
+    },
+    {
+      "id": "consumable_heal_food_meat_var7",
+      "name": "Viande Rotie (v7)",
+      "description": "Un repas chaud qui restaure un peu de sante.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 1.01,
+      "basePrice": 4.18,
+      "stackable": true,
+      "effectId": "regen_medium"
+    },
+    {
+      "id": "consumable_heal_food_meat_var8",
+      "name": "Viande Rotie (v8)",
+      "description": "Un repas chaud qui restaure un peu de sante.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.78,
+      "basePrice": 4.07,
+      "stackable": true,
+      "effectId": "regen_medium",
+      "effects": [
+        "curse_weakness_v4",
+        "curse_weakness"
+      ]
+    },
+    {
+      "id": "consumable_heal_food_meat_var9",
+      "name": "Viande Rotie (v9)",
+      "description": "Un repas chaud qui restaure un peu de sante.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.96,
+      "basePrice": 6.49,
+      "stackable": true,
+      "effectId": "regen_medium"
+    },
+    {
+      "id": "consumable_heal_food_meat_var10",
+      "name": "Viande Rotie (v10)",
+      "description": "Un repas chaud qui restaure un peu de sante.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.72,
+      "basePrice": 4.82,
+      "stackable": true,
+      "effectId": "regen_medium",
+      "effects": [
+        "boost_defense_v3"
+      ]
+    },
+    {
+      "id": "consumable_buff_herbal_tea_var1",
+      "name": "Tisane Tonifiante (v1)",
+      "description": "Augmente legerement la regeneration pendant un moment.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.29,
+      "basePrice": 9.75,
+      "stackable": true,
+      "effectId": "boost_crit",
+      "effects": [
+        "burn_v1",
+        "bless_luck_v2"
+      ]
+    },
+    {
+      "id": "consumable_buff_herbal_tea_var2",
+      "name": "Tisane Tonifiante (v2)",
+      "description": "Augmente legerement la regeneration pendant un moment.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.31,
+      "basePrice": 9.73,
+      "stackable": true,
+      "effectId": "boost_crit",
+      "effects": [
+        "curse_weakness_v5",
+        "boost_defense_v4"
+      ]
+    },
+    {
+      "id": "consumable_buff_herbal_tea_var3",
+      "name": "Tisane Tonifiante (v3)",
+      "description": "Augmente legerement la regeneration pendant un moment.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.32,
+      "basePrice": 9.06,
+      "stackable": true,
+      "effectId": "boost_crit",
+      "effects": [
+        "heal_small"
+      ]
+    },
+    {
+      "id": "consumable_buff_herbal_tea_var4",
+      "name": "Tisane Tonifiante (v4)",
+      "description": "Augmente legerement la regeneration pendant un moment.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.28,
+      "basePrice": 6.2,
+      "stackable": true,
+      "effectId": "boost_crit",
+      "effects": [
+        "poison_strong"
+      ]
+    },
+    {
+      "id": "consumable_buff_herbal_tea_var5",
+      "name": "Tisane Tonifiante (v5)",
+      "description": "Augmente legerement la regeneration pendant un moment.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.37,
+      "basePrice": 8.82,
+      "stackable": true,
+      "effectId": "boost_crit",
+      "effects": [
+        "burn_v2",
+        "boost_crit"
+      ]
+    },
+    {
+      "id": "consumable_buff_herbal_tea_var6",
+      "name": "Tisane Tonifiante (v6)",
+      "description": "Augmente legerement la regeneration pendant un moment.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.26,
+      "basePrice": 7.82,
+      "stackable": true,
+      "effectId": "boost_crit"
+    },
+    {
+      "id": "consumable_buff_herbal_tea_var7",
+      "name": "Tisane Tonifiante (v7)",
+      "description": "Augmente legerement la regeneration pendant un moment.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.33,
+      "basePrice": 9.21,
+      "stackable": true,
+      "effectId": "boost_crit",
+      "effects": [
+        "regen_medium_v1",
+        "poison_small_v2"
+      ]
+    },
+    {
+      "id": "consumable_buff_herbal_tea_var8",
+      "name": "Tisane Tonifiante (v8)",
+      "description": "Augmente legerement la regeneration pendant un moment.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.35,
+      "basePrice": 6.4,
+      "stackable": true,
+      "effectId": "boost_crit",
+      "effects": [
+        "burn_v1"
+      ]
+    },
+    {
+      "id": "consumable_buff_herbal_tea_var9",
+      "name": "Tisane Tonifiante (v9)",
+      "description": "Augmente legerement la regeneration pendant un moment.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.3,
+      "basePrice": 6.79,
+      "stackable": true,
+      "effectId": "boost_crit"
+    },
+    {
+      "id": "consumable_buff_herbal_tea_var10",
+      "name": "Tisane Tonifiante (v10)",
+      "description": "Augmente legerement la regeneration pendant un moment.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.34,
+      "basePrice": 7.17,
+      "stackable": true,
+      "effectId": "boost_crit"
+    },
+    {
+      "id": "consumable_buff_energy_drink_var1",
+      "name": "Boisson energisante (v1)",
+      "description": "Accelere les mouvements temporairement.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.43,
+      "basePrice": 10.94,
+      "stackable": true,
+      "effectId": "boost_attack"
+    },
+    {
+      "id": "consumable_buff_energy_drink_var2",
+      "name": "Boisson energisante (v2)",
+      "description": "Accelere les mouvements temporairement.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.42,
+      "basePrice": 13.03,
+      "stackable": true,
+      "effectId": "boost_attack",
+      "effects": [
+        "boost_defense_v4"
+      ]
+    },
+    {
+      "id": "consumable_buff_energy_drink_var3",
+      "name": "Boisson energisante (v3)",
+      "description": "Accelere les mouvements temporairement.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.41,
+      "basePrice": 12.97,
+      "stackable": true,
+      "effectId": "boost_attack",
+      "effects": [
+        "boost_defense_v2",
+        "poison_strong_v1"
+      ]
+    },
+    {
+      "id": "consumable_buff_energy_drink_var4",
+      "name": "Boisson energisante (v4)",
+      "description": "Accelere les mouvements temporairement.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.44,
+      "basePrice": 9.36,
+      "stackable": true,
+      "effectId": "boost_attack",
+      "effects": [
+        "bless_luck_v3"
+      ]
+    },
+    {
+      "id": "consumable_buff_energy_drink_var5",
+      "name": "Boisson energisante (v5)",
+      "description": "Accelere les mouvements temporairement.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.44,
+      "basePrice": 13.21,
+      "stackable": true,
+      "effectId": "boost_attack"
+    },
+    {
+      "id": "consumable_buff_energy_drink_var6",
+      "name": "Boisson energisante (v6)",
+      "description": "Accelere les mouvements temporairement.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.34,
+      "basePrice": 12.65,
+      "stackable": true,
+      "effectId": "boost_attack",
+      "effects": [
+        "regen_medium_v3",
+        "burn_v1"
+      ]
+    },
+    {
+      "id": "consumable_buff_energy_drink_var7",
+      "name": "Boisson energisante (v7)",
+      "description": "Accelere les mouvements temporairement.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.4,
+      "basePrice": 9.32,
+      "stackable": true,
+      "effectId": "boost_attack"
+    },
+    {
+      "id": "consumable_buff_energy_drink_var8",
+      "name": "Boisson energisante (v8)",
+      "description": "Accelere les mouvements temporairement.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.43,
+      "basePrice": 8.4,
+      "stackable": true,
+      "effectId": "boost_attack"
+    },
+    {
+      "id": "consumable_buff_energy_drink_var9",
+      "name": "Boisson energisante (v9)",
+      "description": "Accelere les mouvements temporairement.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.48,
+      "basePrice": 12.26,
+      "stackable": true,
+      "effectId": "boost_attack"
+    },
+    {
+      "id": "consumable_buff_energy_drink_var10",
+      "name": "Boisson energisante (v10)",
+      "description": "Accelere les mouvements temporairement.",
+      "type": "Consumable",
+      "equipmentSlot": "Consumable",
+      "weight": 0.42,
+      "basePrice": 11.72,
+      "stackable": true,
+      "effectId": "boost_attack"
+    },
+    {
+      "id": "resource_mineral_iron_ore_var1",
+      "name": "Minerai de Fer (v1)",
+      "description": "Un morceau brut de minerai de fer.",
+      "type": "Resource",
+      "weight": 3.76,
+      "basePrice": 7.24,
+      "stackable": true,
+      "effects": [
+        "curse_weakness_v4",
+        "boost_defense_v4"
+      ]
+    },
+    {
+      "id": "resource_mineral_iron_ore_var2",
+      "name": "Minerai de Fer (v2)",
+      "description": "Un morceau brut de minerai de fer.",
+      "type": "Resource",
+      "weight": 3.26,
+      "basePrice": 8.53,
+      "stackable": true,
+      "effects": [
+        "bless_luck_v5",
+        "poison_small_v3"
+      ]
+    },
+    {
+      "id": "resource_mineral_iron_ore_var3",
+      "name": "Minerai de Fer (v3)",
+      "description": "Un morceau brut de minerai de fer.",
+      "type": "Resource",
+      "weight": 3.81,
+      "basePrice": 8.34,
+      "stackable": true
+    },
+    {
+      "id": "resource_mineral_iron_ore_var4",
+      "name": "Minerai de Fer (v4)",
+      "description": "Un morceau brut de minerai de fer.",
+      "type": "Resource",
+      "weight": 2.97,
+      "basePrice": 4.84,
+      "stackable": true,
+      "effects": [
+        "bless_luck",
+        "heal_small_v4"
+      ]
+    },
+    {
+      "id": "resource_mineral_iron_ore_var5",
+      "name": "Minerai de Fer (v5)",
+      "description": "Un morceau brut de minerai de fer.",
+      "type": "Resource",
+      "weight": 2.64,
+      "basePrice": 5.8,
+      "stackable": true,
+      "effects": [
+        "regen_medium_v3",
+        "regen_medium_v2"
+      ]
+    },
+    {
+      "id": "resource_mineral_iron_ore_var6",
+      "name": "Minerai de Fer (v6)",
+      "description": "Un morceau brut de minerai de fer.",
+      "type": "Resource",
+      "weight": 3.01,
+      "basePrice": 4.94,
+      "stackable": true,
+      "effects": [
+        "bless_luck_v2",
+        "boost_attack_v3"
+      ]
+    },
+    {
+      "id": "resource_mineral_iron_ore_var7",
+      "name": "Minerai de Fer (v7)",
+      "description": "Un morceau brut de minerai de fer.",
+      "type": "Resource",
+      "weight": 3.09,
+      "basePrice": 8.85,
+      "stackable": true,
+      "effects": [
+        "poison_small_v3",
+        "poison_strong_v3"
+      ]
+    },
+    {
+      "id": "resource_mineral_iron_ore_var8",
+      "name": "Minerai de Fer (v8)",
+      "description": "Un morceau brut de minerai de fer.",
+      "type": "Resource",
+      "weight": 2.72,
+      "basePrice": 6.39,
+      "stackable": true,
+      "effects": [
+        "regen_medium_v5",
+        "bless_luck_v3"
+      ]
+    },
+    {
+      "id": "resource_mineral_iron_ore_var9",
+      "name": "Minerai de Fer (v9)",
+      "description": "Un morceau brut de minerai de fer.",
+      "type": "Resource",
+      "weight": 3.83,
+      "basePrice": 5.77,
+      "stackable": true
+    },
+    {
+      "id": "resource_mineral_iron_ore_var10",
+      "name": "Minerai de Fer (v10)",
+      "description": "Un morceau brut de minerai de fer.",
+      "type": "Resource",
+      "weight": 3.54,
+      "basePrice": 5.28,
+      "stackable": true
+    },
+    {
+      "id": "resource_wood_oak_log_var1",
+      "name": "Buche de Chene (v1)",
+      "description": "Solide et dense, parfaite pour construire ou bruler.",
+      "type": "Resource",
+      "weight": 2.46,
+      "basePrice": 4.32,
+      "stackable": true,
+      "effects": [
+        "boost_defense"
+      ]
+    },
+    {
+      "id": "resource_wood_oak_log_var2",
+      "name": "Buche de Chene (v2)",
+      "description": "Solide et dense, parfaite pour construire ou bruler.",
+      "type": "Resource",
+      "weight": 1.89,
+      "basePrice": 5.19,
+      "stackable": true
+    },
+    {
+      "id": "resource_wood_oak_log_var3",
+      "name": "Buche de Chene (v3)",
+      "description": "Solide et dense, parfaite pour construire ou bruler.",
+      "type": "Resource",
+      "weight": 1.84,
+      "basePrice": 5.78,
+      "stackable": true,
+      "effects": [
+        "boost_defense_v3",
+        "heal_small_v4"
+      ]
+    },
+    {
+      "id": "resource_wood_oak_log_var4",
+      "name": "Buche de Chene (v4)",
+      "description": "Solide et dense, parfaite pour construire ou bruler.",
+      "type": "Resource",
+      "weight": 1.62,
+      "basePrice": 4.73,
+      "stackable": true
+    },
+    {
+      "id": "resource_wood_oak_log_var5",
+      "name": "Buche de Chene (v5)",
+      "description": "Solide et dense, parfaite pour construire ou bruler.",
+      "type": "Resource",
+      "weight": 1.76,
+      "basePrice": 5.94,
+      "stackable": true,
+      "effects": [
+        "boost_attack_v2"
+      ]
+    },
+    {
+      "id": "resource_wood_oak_log_var6",
+      "name": "Buche de Chene (v6)",
+      "description": "Solide et dense, parfaite pour construire ou bruler.",
+      "type": "Resource",
+      "weight": 1.88,
+      "basePrice": 3.42,
+      "stackable": true
+    },
+    {
+      "id": "resource_wood_oak_log_var7",
+      "name": "Buche de Chene (v7)",
+      "description": "Solide et dense, parfaite pour construire ou bruler.",
+      "type": "Resource",
+      "weight": 2.04,
+      "basePrice": 4.13,
+      "stackable": true
+    },
+    {
+      "id": "resource_wood_oak_log_var8",
+      "name": "Buche de Chene (v8)",
+      "description": "Solide et dense, parfaite pour construire ou bruler.",
+      "type": "Resource",
+      "weight": 2.56,
+      "basePrice": 4.46,
+      "stackable": true,
+      "effects": [
+        "poison_small_v5",
+        "regen_medium_v1"
+      ]
+    },
+    {
+      "id": "resource_wood_oak_log_var9",
+      "name": "Buche de Chene (v9)",
+      "description": "Solide et dense, parfaite pour construire ou bruler.",
+      "type": "Resource",
+      "weight": 2.24,
+      "basePrice": 5.27,
+      "stackable": true
+    },
+    {
+      "id": "resource_wood_oak_log_var10",
+      "name": "Buche de Chene (v10)",
+      "description": "Solide et dense, parfaite pour construire ou bruler.",
+      "type": "Resource",
+      "weight": 1.61,
+      "basePrice": 5.75,
+      "stackable": true
+    },
+    {
+      "id": "resource_fish_trout_var1",
+      "name": "Truite Fraiche (v1)",
+      "description": "Un poisson delicieux, encore fretillant.",
+      "type": "Resource",
+      "weight": 1.12,
+      "basePrice": 2.49,
+      "stackable": true,
+      "effects": [
+        "heal_small_v3"
+      ]
+    },
+    {
+      "id": "resource_fish_trout_var2",
+      "name": "Truite Fraiche (v2)",
+      "description": "Un poisson delicieux, encore fretillant.",
+      "type": "Resource",
+      "weight": 0.95,
+      "basePrice": 4.49,
+      "stackable": true,
+      "effects": [
+        "curse_weakness_v2"
+      ]
+    },
+    {
+      "id": "resource_fish_trout_var3",
+      "name": "Truite Fraiche (v3)",
+      "description": "Un poisson delicieux, encore fretillant.",
+      "type": "Resource",
+      "weight": 0.91,
+      "basePrice": 2.48,
+      "stackable": true
+    },
+    {
+      "id": "resource_fish_trout_var4",
+      "name": "Truite Fraiche (v4)",
+      "description": "Un poisson delicieux, encore fretillant.",
+      "type": "Resource",
+      "weight": 1.18,
+      "basePrice": 4.29,
+      "stackable": true,
+      "effects": [
+        "poison_strong_v5"
+      ]
+    },
+    {
+      "id": "resource_fish_trout_var5",
+      "name": "Truite Fraiche (v5)",
+      "description": "Un poisson delicieux, encore fretillant.",
+      "type": "Resource",
+      "weight": 0.82,
+      "basePrice": 4.05,
+      "stackable": true,
+      "effects": [
+        "poison_small_v3"
+      ]
+    },
+    {
+      "id": "resource_fish_trout_var6",
+      "name": "Truite Fraiche (v6)",
+      "description": "Un poisson delicieux, encore fretillant.",
+      "type": "Resource",
+      "weight": 1.21,
+      "basePrice": 2.67,
+      "stackable": true,
+      "effects": [
+        "boost_defense_v2",
+        "boost_attack_v2"
+      ]
+    },
+    {
+      "id": "resource_fish_trout_var7",
+      "name": "Truite Fraiche (v7)",
+      "description": "Un poisson delicieux, encore fretillant.",
+      "type": "Resource",
+      "weight": 1.12,
+      "basePrice": 4.29,
+      "stackable": true,
+      "effects": [
+        "poison_small_v4"
+      ]
+    },
+    {
+      "id": "resource_fish_trout_var8",
+      "name": "Truite Fraiche (v8)",
+      "description": "Un poisson delicieux, encore fretillant.",
+      "type": "Resource",
+      "weight": 0.87,
+      "basePrice": 3.7,
+      "stackable": true
+    },
+    {
+      "id": "resource_fish_trout_var9",
+      "name": "Truite Fraiche (v9)",
+      "description": "Un poisson delicieux, encore fretillant.",
+      "type": "Resource",
+      "weight": 0.86,
+      "basePrice": 3.48,
+      "stackable": true,
+      "effects": [
+        "regen_medium_v4"
+      ]
+    },
+    {
+      "id": "resource_fish_trout_var10",
+      "name": "Truite Fraiche (v10)",
+      "description": "Un poisson delicieux, encore fretillant.",
+      "type": "Resource",
+      "weight": 1.06,
+      "basePrice": 4.1,
+      "stackable": true
+    },
+    {
+      "id": "resource_herb_healing_var1",
+      "name": "Herbe Medicinale (v1)",
+      "description": "Utilisee pour concocter des potions de soin.",
+      "type": "Resource",
+      "weight": 0.25,
+      "basePrice": 2.99,
+      "stackable": true
+    },
+    {
+      "id": "resource_herb_healing_var2",
+      "name": "Herbe Medicinale (v2)",
+      "description": "Utilisee pour concocter des potions de soin.",
+      "type": "Resource",
+      "weight": 0.25,
+      "basePrice": 2.85,
+      "stackable": true,
+      "effects": [
+        "boost_defense_v2",
+        "poison_small_v3"
+      ]
+    },
+    {
+      "id": "resource_herb_healing_var3",
+      "name": "Herbe Medicinale (v3)",
+      "description": "Utilisee pour concocter des potions de soin.",
+      "type": "Resource",
+      "weight": 0.17,
+      "basePrice": 1.62,
+      "stackable": true,
+      "effects": [
+        "heal_small_v4",
+        "boost_crit_v4"
+      ]
+    },
+    {
+      "id": "resource_herb_healing_var4",
+      "name": "Herbe Medicinale (v4)",
+      "description": "Utilisee pour concocter des potions de soin.",
+      "type": "Resource",
+      "weight": 0.22,
+      "basePrice": 2.0,
+      "stackable": true,
+      "effects": [
+        "curse_weakness_v3",
+        "boost_attack_v5"
+      ]
+    },
+    {
+      "id": "resource_herb_healing_var5",
+      "name": "Herbe Medicinale (v5)",
+      "description": "Utilisee pour concocter des potions de soin.",
+      "type": "Resource",
+      "weight": 0.19,
+      "basePrice": 2.65,
+      "stackable": true
+    },
+    {
+      "id": "resource_herb_healing_var6",
+      "name": "Herbe Medicinale (v6)",
+      "description": "Utilisee pour concocter des potions de soin.",
+      "type": "Resource",
+      "weight": 0.16,
+      "basePrice": 2.07,
+      "stackable": true,
+      "effects": [
+        "boost_defense_v2"
+      ]
+    },
+    {
+      "id": "resource_herb_healing_var7",
+      "name": "Herbe Medicinale (v7)",
+      "description": "Utilisee pour concocter des potions de soin.",
+      "type": "Resource",
+      "weight": 0.19,
+      "basePrice": 2.95,
+      "stackable": true,
+      "effects": [
+        "regen_medium_v3"
+      ]
+    },
+    {
+      "id": "resource_herb_healing_var8",
+      "name": "Herbe Medicinale (v8)",
+      "description": "Utilisee pour concocter des potions de soin.",
+      "type": "Resource",
+      "weight": 0.26,
+      "basePrice": 2.93,
+      "stackable": true
+    },
+    {
+      "id": "resource_herb_healing_var9",
+      "name": "Herbe Medicinale (v9)",
+      "description": "Utilisee pour concocter des potions de soin.",
+      "type": "Resource",
+      "weight": 0.22,
+      "basePrice": 2.89,
+      "stackable": true,
+      "effects": [
+        "boost_crit"
+      ]
+    },
+    {
+      "id": "resource_herb_healing_var10",
+      "name": "Herbe Medicinale (v10)",
+      "description": "Utilisee pour concocter des potions de soin.",
+      "type": "Resource",
+      "weight": 0.24,
+      "basePrice": 2.65,
+      "stackable": true
+    },
+    {
+      "id": "armor_helmet_leather_var1",
+      "name": "Casque en Cuir (v1)",
+      "description": "Protege legerement la tete contre les coups.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 0.95,
+      "basePrice": 14.58,
+      "stackable": false,
+      "effectId": "armor_head_light"
+    },
+    {
+      "id": "armor_helmet_leather_var2",
+      "name": "Casque en Cuir (v2)",
+      "description": "Protege legerement la tete contre les coups.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 0.92,
+      "basePrice": 8.79,
+      "stackable": false,
+      "effectId": "armor_head_light"
+    },
+    {
+      "id": "armor_helmet_leather_var3",
+      "name": "Casque en Cuir (v3)",
+      "description": "Protege legerement la tete contre les coups.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 1.17,
+      "basePrice": 10.82,
+      "stackable": false,
+      "effectId": "armor_head_light"
+    },
+    {
+      "id": "armor_helmet_leather_var4",
+      "name": "Casque en Cuir (v4)",
+      "description": "Protege legerement la tete contre les coups.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 1.12,
+      "basePrice": 11.63,
+      "stackable": false,
+      "effectId": "armor_head_light"
+    },
+    {
+      "id": "armor_helmet_leather_var5",
+      "name": "Casque en Cuir (v5)",
+      "description": "Protege legerement la tete contre les coups.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 1.07,
+      "basePrice": 13.23,
+      "stackable": false,
+      "effectId": "armor_head_light"
+    },
+    {
+      "id": "armor_helmet_leather_var6",
+      "name": "Casque en Cuir (v6)",
+      "description": "Protege legerement la tete contre les coups.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 1.16,
+      "basePrice": 11.4,
+      "stackable": false,
+      "effectId": "armor_head_light"
+    },
+    {
+      "id": "armor_helmet_leather_var7",
+      "name": "Casque en Cuir (v7)",
+      "description": "Protege legerement la tete contre les coups.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 1.27,
+      "basePrice": 8.72,
+      "stackable": false,
+      "effectId": "armor_head_light",
+      "effects": [
+        "boost_attack",
+        "bless_luck"
+      ]
+    },
+    {
+      "id": "armor_helmet_leather_var8",
+      "name": "Casque en Cuir (v8)",
+      "description": "Protege legerement la tete contre les coups.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 0.82,
+      "basePrice": 11.57,
+      "stackable": false,
+      "effectId": "armor_head_light"
+    },
+    {
+      "id": "armor_helmet_leather_var9",
+      "name": "Casque en Cuir (v9)",
+      "description": "Protege legerement la tete contre les coups.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 0.98,
+      "basePrice": 14.84,
+      "stackable": false,
+      "effectId": "armor_head_light",
+      "effects": [
+        "regen_medium_v3",
+        "heal_small_v2"
+      ]
+    },
+    {
+      "id": "armor_helmet_leather_var10",
+      "name": "Casque en Cuir (v10)",
+      "description": "Protege legerement la tete contre les coups.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 0.93,
+      "basePrice": 12.64,
+      "stackable": false,
+      "effectId": "armor_head_light",
+      "effects": [
+        "regen_medium_v5"
+      ]
+    },
+    {
+      "id": "armor_outfit_leather_var1",
+      "name": "Tenue en Cuir (v1)",
+      "description": "Une protection corporelle souple en cuir tanne.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 3.34,
+      "basePrice": 24.53,
+      "stackable": false,
+      "effectId": "armor_body_light",
+      "effects": [
+        "burn_v5",
+        "regen_medium_v3"
+      ]
+    },
+    {
+      "id": "armor_outfit_leather_var2",
+      "name": "Tenue en Cuir (v2)",
+      "description": "Une protection corporelle souple en cuir tanne.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 2.84,
+      "basePrice": 19.28,
+      "stackable": false,
+      "effectId": "armor_body_light",
+      "effects": [
+        "regen_medium",
+        "boost_crit_v2"
+      ]
+    },
+    {
+      "id": "armor_outfit_leather_var3",
+      "name": "Tenue en Cuir (v3)",
+      "description": "Une protection corporelle souple en cuir tanne.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 3.83,
+      "basePrice": 22.63,
+      "stackable": false,
+      "effectId": "armor_body_light",
+      "effects": [
+        "poison_small_v2"
+      ]
+    },
+    {
+      "id": "armor_outfit_leather_var4",
+      "name": "Tenue en Cuir (v4)",
+      "description": "Une protection corporelle souple en cuir tanne.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 3.3,
+      "basePrice": 29.05,
+      "stackable": false,
+      "effectId": "armor_body_light"
+    },
+    {
+      "id": "armor_outfit_leather_var5",
+      "name": "Tenue en Cuir (v5)",
+      "description": "Une protection corporelle souple en cuir tanne.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 3.67,
+      "basePrice": 29.47,
+      "stackable": false,
+      "effectId": "armor_body_light"
+    },
+    {
+      "id": "armor_outfit_leather_var6",
+      "name": "Tenue en Cuir (v6)",
+      "description": "Une protection corporelle souple en cuir tanne.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 2.69,
+      "basePrice": 18.01,
+      "stackable": false,
+      "effectId": "armor_body_light",
+      "effects": [
+        "heal_small_v3",
+        "poison_small_v3"
+      ]
+    },
+    {
+      "id": "armor_outfit_leather_var7",
+      "name": "Tenue en Cuir (v7)",
+      "description": "Une protection corporelle souple en cuir tanne.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 2.51,
+      "basePrice": 22.61,
+      "stackable": false,
+      "effectId": "armor_body_light",
+      "effects": [
+        "poison_strong_v4",
+        "boost_defense_v2"
+      ]
+    },
+    {
+      "id": "armor_outfit_leather_var8",
+      "name": "Tenue en Cuir (v8)",
+      "description": "Une protection corporelle souple en cuir tanne.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 3.44,
+      "basePrice": 18.24,
+      "stackable": false,
+      "effectId": "armor_body_light",
+      "effects": [
+        "heal_small_v5",
+        "poison_strong"
+      ]
+    },
+    {
+      "id": "armor_outfit_leather_var9",
+      "name": "Tenue en Cuir (v9)",
+      "description": "Une protection corporelle souple en cuir tanne.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 3.79,
+      "basePrice": 18.26,
+      "stackable": false,
+      "effectId": "armor_body_light",
+      "effects": [
+        "curse_weakness_v3",
+        "boost_crit_v3"
+      ]
+    },
+    {
+      "id": "armor_outfit_leather_var10",
+      "name": "Tenue en Cuir (v10)",
+      "description": "Une protection corporelle souple en cuir tanne.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 2.47,
+      "basePrice": 16.34,
+      "stackable": false,
+      "effectId": "armor_body_light",
+      "effects": [
+        "bless_luck_v5",
+        "boost_crit"
+      ]
+    },
+    {
+      "id": "armor_helmet_iron_var1",
+      "name": "Casque en Fer (v1)",
+      "description": "Protection robuste pour la tete.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 2.91,
+      "basePrice": 24.18,
+      "stackable": false,
+      "effectId": "armor_head_medium",
+      "effects": [
+        "boost_crit_v5",
+        "poison_strong_v2"
+      ]
+    },
+    {
+      "id": "armor_helmet_iron_var2",
+      "name": "Casque en Fer (v2)",
+      "description": "Protection robuste pour la tete.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 3.17,
+      "basePrice": 21.62,
+      "stackable": false,
+      "effectId": "armor_head_medium"
+    },
+    {
+      "id": "armor_helmet_iron_var3",
+      "name": "Casque en Fer (v3)",
+      "description": "Protection robuste pour la tete.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 2.55,
+      "basePrice": 20.24,
+      "stackable": false,
+      "effectId": "armor_head_medium",
+      "effects": [
+        "regen_medium_v5",
+        "poison_small_v4"
+      ]
+    },
+    {
+      "id": "armor_helmet_iron_var4",
+      "name": "Casque en Fer (v4)",
+      "description": "Protection robuste pour la tete.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 2.38,
+      "basePrice": 18.69,
+      "stackable": false,
+      "effectId": "armor_head_medium",
+      "effects": [
+        "bless_luck_v5",
+        "burn_v2"
+      ]
+    },
+    {
+      "id": "armor_helmet_iron_var5",
+      "name": "Casque en Fer (v5)",
+      "description": "Protection robuste pour la tete.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 2.72,
+      "basePrice": 15.6,
+      "stackable": false,
+      "effectId": "armor_head_medium",
+      "effects": [
+        "poison_small",
+        "burn_v3"
+      ]
+    },
+    {
+      "id": "armor_helmet_iron_var6",
+      "name": "Casque en Fer (v6)",
+      "description": "Protection robuste pour la tete.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 2.49,
+      "basePrice": 25.26,
+      "stackable": false,
+      "effectId": "armor_head_medium"
+    },
+    {
+      "id": "armor_helmet_iron_var7",
+      "name": "Casque en Fer (v7)",
+      "description": "Protection robuste pour la tete.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 2.32,
+      "basePrice": 14.77,
+      "stackable": false,
+      "effectId": "armor_head_medium",
+      "effects": [
+        "curse_weakness_v4"
+      ]
+    },
+    {
+      "id": "armor_helmet_iron_var8",
+      "name": "Casque en Fer (v8)",
+      "description": "Protection robuste pour la tete.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 2.67,
+      "basePrice": 20.07,
+      "stackable": false,
+      "effectId": "armor_head_medium"
+    },
+    {
+      "id": "armor_helmet_iron_var9",
+      "name": "Casque en Fer (v9)",
+      "description": "Protection robuste pour la tete.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 2.78,
+      "basePrice": 22.39,
+      "stackable": false,
+      "effectId": "armor_head_medium"
+    },
+    {
+      "id": "armor_helmet_iron_var10",
+      "name": "Casque en Fer (v10)",
+      "description": "Protection robuste pour la tete.",
+      "type": "Armor",
+      "equipmentSlot": "Helmet",
+      "weight": 2.16,
+      "basePrice": 21.79,
+      "stackable": false,
+      "effectId": "armor_head_medium"
+    },
+    {
+      "id": "armor_outfit_chainmail_var1",
+      "name": "Cotte de Mailles (v1)",
+      "description": "Offre une bonne defense contre les attaques physiques.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 6.41,
+      "basePrice": 37.68,
+      "stackable": false,
+      "effectId": "armor_body_medium"
+    },
+    {
+      "id": "armor_outfit_chainmail_var2",
+      "name": "Cotte de Mailles (v2)",
+      "description": "Offre une bonne defense contre les attaques physiques.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 5.43,
+      "basePrice": 48.49,
+      "stackable": false,
+      "effectId": "armor_body_medium"
+    },
+    {
+      "id": "armor_outfit_chainmail_var3",
+      "name": "Cotte de Mailles (v3)",
+      "description": "Offre une bonne defense contre les attaques physiques.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 6.22,
+      "basePrice": 34.97,
+      "stackable": false,
+      "effectId": "armor_body_medium"
+    },
+    {
+      "id": "armor_outfit_chainmail_var4",
+      "name": "Cotte de Mailles (v4)",
+      "description": "Offre une bonne defense contre les attaques physiques.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 6.45,
+      "basePrice": 34.31,
+      "stackable": false,
+      "effectId": "armor_body_medium",
+      "effects": [
+        "regen_medium_v2",
+        "burn_v2"
+      ]
+    },
+    {
+      "id": "armor_outfit_chainmail_var5",
+      "name": "Cotte de Mailles (v5)",
+      "description": "Offre une bonne defense contre les attaques physiques.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 6.52,
+      "basePrice": 50.67,
+      "stackable": false,
+      "effectId": "armor_body_medium"
+    },
+    {
+      "id": "armor_outfit_chainmail_var6",
+      "name": "Cotte de Mailles (v6)",
+      "description": "Offre une bonne defense contre les attaques physiques.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 5.01,
+      "basePrice": 34.98,
+      "stackable": false,
+      "effectId": "armor_body_medium",
+      "effects": [
+        "poison_strong_v3"
+      ]
+    },
+    {
+      "id": "armor_outfit_chainmail_var7",
+      "name": "Cotte de Mailles (v7)",
+      "description": "Offre une bonne defense contre les attaques physiques.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 5.81,
+      "basePrice": 28.93,
+      "stackable": false,
+      "effectId": "armor_body_medium"
+    },
+    {
+      "id": "armor_outfit_chainmail_var8",
+      "name": "Cotte de Mailles (v8)",
+      "description": "Offre une bonne defense contre les attaques physiques.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 5.42,
+      "basePrice": 43.36,
+      "stackable": false,
+      "effectId": "armor_body_medium",
+      "effects": [
+        "regen_medium_v4",
+        "boost_attack_v5"
+      ]
+    },
+    {
+      "id": "armor_outfit_chainmail_var9",
+      "name": "Cotte de Mailles (v9)",
+      "description": "Offre une bonne defense contre les attaques physiques.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 7.62,
+      "basePrice": 49.91,
+      "stackable": false,
+      "effectId": "armor_body_medium"
+    },
+    {
+      "id": "armor_outfit_chainmail_var10",
+      "name": "Cotte de Mailles (v10)",
+      "description": "Offre une bonne defense contre les attaques physiques.",
+      "type": "Armor",
+      "equipmentSlot": "Chest",
+      "weight": 6.41,
+      "basePrice": 48.33,
+      "stackable": false,
+      "effectId": "armor_body_medium"
+    },
+    {
+      "id": "head_basic_1",
+      "name": "Head Basique (v1)",
+      "description": "Un(e) head standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Head",
+      "weight": 0.9,
+      "basePrice": 13,
+      "stackable": false,
+      "effectId": "armor_head_light",
+      "effects": [
+        "armor_head_light"
+      ]
+    },
+    {
+      "id": "head_basic_2",
+      "name": "Head Basique (v2)",
+      "description": "Un(e) head standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Head",
+      "weight": 1.0,
+      "basePrice": 16,
+      "stackable": false,
+      "effectId": "armor_head_light",
+      "effects": [
+        "armor_head_light"
+      ]
+    },
+    {
+      "id": "head_basic_3",
+      "name": "Head Basique (v3)",
+      "description": "Un(e) head standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Head",
+      "weight": 1.1,
+      "basePrice": 19,
+      "stackable": false,
+      "effectId": "armor_head_light",
+      "effects": [
+        "armor_head_light"
+      ]
+    },
+    {
+      "id": "head_basic_4",
+      "name": "Head Basique (v4)",
+      "description": "Un(e) head standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Head",
+      "weight": 1.2,
+      "basePrice": 22,
+      "stackable": false,
+      "effectId": "armor_head_light",
+      "effects": [
+        "armor_head_light"
+      ]
+    },
+    {
+      "id": "head_basic_5",
+      "name": "Head Basique (v5)",
+      "description": "Un(e) head standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Head",
+      "weight": 1.3,
+      "basePrice": 25,
+      "stackable": false,
+      "effectId": "armor_head_light",
+      "effects": [
+        "armor_head_light"
+      ]
+    },
+    {
+      "id": "body_basic_1",
+      "name": "Body Basique (v1)",
+      "description": "Un(e) body standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Body",
+      "weight": 0.9,
+      "basePrice": 13,
+      "stackable": false,
+      "effectId": "armor_body_light",
+      "effects": [
+        "armor_body_light"
+      ]
+    },
+    {
+      "id": "body_basic_2",
+      "name": "Body Basique (v2)",
+      "description": "Un(e) body standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Body",
+      "weight": 1.0,
+      "basePrice": 16,
+      "stackable": false,
+      "effectId": "armor_body_light",
+      "effects": [
+        "armor_body_light"
+      ]
+    },
+    {
+      "id": "body_basic_3",
+      "name": "Body Basique (v3)",
+      "description": "Un(e) body standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Body",
+      "weight": 1.1,
+      "basePrice": 19,
+      "stackable": false,
+      "effectId": "armor_body_light",
+      "effects": [
+        "armor_body_light"
+      ]
+    },
+    {
+      "id": "body_basic_4",
+      "name": "Body Basique (v4)",
+      "description": "Un(e) body standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Body",
+      "weight": 1.2,
+      "basePrice": 22,
+      "stackable": false,
+      "effectId": "armor_body_light",
+      "effects": [
+        "armor_body_light"
+      ]
+    },
+    {
+      "id": "body_basic_5",
+      "name": "Body Basique (v5)",
+      "description": "Un(e) body standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Body",
+      "weight": 1.3,
+      "basePrice": 25,
+      "stackable": false,
+      "effectId": "armor_body_light",
+      "effects": [
+        "armor_body_light"
+      ]
+    },
+    {
+      "id": "legs_basic_1",
+      "name": "Legs Basique (v1)",
+      "description": "Un(e) legs standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Legs",
+      "weight": 0.9,
+      "basePrice": 13,
+      "stackable": false,
+      "effectId": "armor_legs_light",
+      "effects": [
+        "armor_legs_light"
+      ]
+    },
+    {
+      "id": "legs_basic_2",
+      "name": "Legs Basique (v2)",
+      "description": "Un(e) legs standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Legs",
+      "weight": 1.0,
+      "basePrice": 16,
+      "stackable": false,
+      "effectId": "armor_legs_light",
+      "effects": [
+        "armor_legs_light"
+      ]
+    },
+    {
+      "id": "legs_basic_3",
+      "name": "Legs Basique (v3)",
+      "description": "Un(e) legs standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Legs",
+      "weight": 1.1,
+      "basePrice": 19,
+      "stackable": false,
+      "effectId": "armor_legs_light",
+      "effects": [
+        "armor_legs_light"
+      ]
+    },
+    {
+      "id": "legs_basic_4",
+      "name": "Legs Basique (v4)",
+      "description": "Un(e) legs standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Legs",
+      "weight": 1.2,
+      "basePrice": 22,
+      "stackable": false,
+      "effectId": "armor_legs_light",
+      "effects": [
+        "armor_legs_light"
+      ]
+    },
+    {
+      "id": "legs_basic_5",
+      "name": "Legs Basique (v5)",
+      "description": "Un(e) legs standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Legs",
+      "weight": 1.3,
+      "basePrice": 25,
+      "stackable": false,
+      "effectId": "armor_legs_light",
+      "effects": [
+        "armor_legs_light"
+      ]
+    },
+    {
+      "id": "feet_basic_1",
+      "name": "Feet Basique (v1)",
+      "description": "Un(e) feet standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Feet",
+      "weight": 0.9,
+      "basePrice": 13,
+      "stackable": false,
+      "effectId": "armor_feet_light",
+      "effects": [
+        "armor_feet_light"
+      ]
+    },
+    {
+      "id": "feet_basic_2",
+      "name": "Feet Basique (v2)",
+      "description": "Un(e) feet standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Feet",
+      "weight": 1.0,
+      "basePrice": 16,
+      "stackable": false,
+      "effectId": "armor_feet_light",
+      "effects": [
+        "armor_feet_light"
+      ]
+    },
+    {
+      "id": "feet_basic_3",
+      "name": "Feet Basique (v3)",
+      "description": "Un(e) feet standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Feet",
+      "weight": 1.1,
+      "basePrice": 19,
+      "stackable": false,
+      "effectId": "armor_feet_light",
+      "effects": [
+        "armor_feet_light"
+      ]
+    },
+    {
+      "id": "feet_basic_4",
+      "name": "Feet Basique (v4)",
+      "description": "Un(e) feet standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Feet",
+      "weight": 1.2,
+      "basePrice": 22,
+      "stackable": false,
+      "effectId": "armor_feet_light",
+      "effects": [
+        "armor_feet_light"
+      ]
+    },
+    {
+      "id": "feet_basic_5",
+      "name": "Feet Basique (v5)",
+      "description": "Un(e) feet standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Feet",
+      "weight": 1.3,
+      "basePrice": 25,
+      "stackable": false,
+      "effectId": "armor_feet_light",
+      "effects": [
+        "armor_feet_light"
+      ]
+    },
+    {
+      "id": "gloves_basic_1",
+      "name": "Gloves Basique (v1)",
+      "description": "Un(e) gloves standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Gloves",
+      "weight": 0.9,
+      "basePrice": 13,
+      "stackable": false,
+      "effectId": "armor_gloves_light",
+      "effects": [
+        "armor_gloves_light"
+      ]
+    },
+    {
+      "id": "gloves_basic_2",
+      "name": "Gloves Basique (v2)",
+      "description": "Un(e) gloves standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Gloves",
+      "weight": 1.0,
+      "basePrice": 16,
+      "stackable": false,
+      "effectId": "armor_gloves_light",
+      "effects": [
+        "armor_gloves_light"
+      ]
+    },
+    {
+      "id": "gloves_basic_3",
+      "name": "Gloves Basique (v3)",
+      "description": "Un(e) gloves standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Gloves",
+      "weight": 1.1,
+      "basePrice": 19,
+      "stackable": false,
+      "effectId": "armor_gloves_light",
+      "effects": [
+        "armor_gloves_light"
+      ]
+    },
+    {
+      "id": "gloves_basic_4",
+      "name": "Gloves Basique (v4)",
+      "description": "Un(e) gloves standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Gloves",
+      "weight": 1.2,
+      "basePrice": 22,
+      "stackable": false,
+      "effectId": "armor_gloves_light",
+      "effects": [
+        "armor_gloves_light"
+      ]
+    },
+    {
+      "id": "gloves_basic_5",
+      "name": "Gloves Basique (v5)",
+      "description": "Un(e) gloves standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Gloves",
+      "weight": 1.3,
+      "basePrice": 25,
+      "stackable": false,
+      "effectId": "armor_gloves_light",
+      "effects": [
+        "armor_gloves_light"
+      ]
+    },
+    {
+      "id": "ring_basic_1",
+      "name": "Ring Basique (v1)",
+      "description": "Un(e) ring standard offrant une protection ou un bonus de base.",
+      "type": "Accessory",
+      "equipmentSlot": "Ring",
+      "weight": 0.9,
+      "basePrice": 13,
+      "stackable": false,
+      "effectId": "jewelry_ring_boost",
+      "effects": [
+        "jewelry_ring_boost"
+      ]
+    },
+    {
+      "id": "ring_basic_2",
+      "name": "Ring Basique (v2)",
+      "description": "Un(e) ring standard offrant une protection ou un bonus de base.",
+      "type": "Accessory",
+      "equipmentSlot": "Ring",
+      "weight": 1.0,
+      "basePrice": 16,
+      "stackable": false,
+      "effectId": "jewelry_ring_boost",
+      "effects": [
+        "jewelry_ring_boost"
+      ]
+    },
+    {
+      "id": "ring_basic_3",
+      "name": "Ring Basique (v3)",
+      "description": "Un(e) ring standard offrant une protection ou un bonus de base.",
+      "type": "Accessory",
+      "equipmentSlot": "Ring",
+      "weight": 1.1,
+      "basePrice": 19,
+      "stackable": false,
+      "effectId": "jewelry_ring_boost",
+      "effects": [
+        "jewelry_ring_boost"
+      ]
+    },
+    {
+      "id": "ring_basic_4",
+      "name": "Ring Basique (v4)",
+      "description": "Un(e) ring standard offrant une protection ou un bonus de base.",
+      "type": "Accessory",
+      "equipmentSlot": "Ring",
+      "weight": 1.2,
+      "basePrice": 22,
+      "stackable": false,
+      "effectId": "jewelry_ring_boost",
+      "effects": [
+        "jewelry_ring_boost"
+      ]
+    },
+    {
+      "id": "ring_basic_5",
+      "name": "Ring Basique (v5)",
+      "description": "Un(e) ring standard offrant une protection ou un bonus de base.",
+      "type": "Accessory",
+      "equipmentSlot": "Ring",
+      "weight": 1.3,
+      "basePrice": 25,
+      "stackable": false,
+      "effectId": "jewelry_ring_boost",
+      "effects": [
+        "jewelry_ring_boost"
+      ]
+    },
+    {
+      "id": "amulet_basic_1",
+      "name": "Amulet Basique (v1)",
+      "description": "Un(e) amulet standard offrant une protection ou un bonus de base.",
+      "type": "Accessory",
+      "equipmentSlot": "Amulet",
+      "weight": 0.9,
+      "basePrice": 13,
+      "stackable": false,
+      "effectId": "jewelry_amulet_heal",
+      "effects": [
+        "jewelry_amulet_heal"
+      ]
+    },
+    {
+      "id": "amulet_basic_2",
+      "name": "Amulet Basique (v2)",
+      "description": "Un(e) amulet standard offrant une protection ou un bonus de base.",
+      "type": "Accessory",
+      "equipmentSlot": "Amulet",
+      "weight": 1.0,
+      "basePrice": 16,
+      "stackable": false,
+      "effectId": "jewelry_amulet_heal",
+      "effects": [
+        "jewelry_amulet_heal"
+      ]
+    },
+    {
+      "id": "amulet_basic_3",
+      "name": "Amulet Basique (v3)",
+      "description": "Un(e) amulet standard offrant une protection ou un bonus de base.",
+      "type": "Accessory",
+      "equipmentSlot": "Amulet",
+      "weight": 1.1,
+      "basePrice": 19,
+      "stackable": false,
+      "effectId": "jewelry_amulet_heal",
+      "effects": [
+        "jewelry_amulet_heal"
+      ]
+    },
+    {
+      "id": "amulet_basic_4",
+      "name": "Amulet Basique (v4)",
+      "description": "Un(e) amulet standard offrant une protection ou un bonus de base.",
+      "type": "Accessory",
+      "equipmentSlot": "Amulet",
+      "weight": 1.2,
+      "basePrice": 22,
+      "stackable": false,
+      "effectId": "jewelry_amulet_heal",
+      "effects": [
+        "jewelry_amulet_heal"
+      ]
+    },
+    {
+      "id": "amulet_basic_5",
+      "name": "Amulet Basique (v5)",
+      "description": "Un(e) amulet standard offrant une protection ou un bonus de base.",
+      "type": "Accessory",
+      "equipmentSlot": "Amulet",
+      "weight": 1.3,
+      "basePrice": 25,
+      "stackable": false,
+      "effectId": "jewelry_amulet_heal",
+      "effects": [
+        "jewelry_amulet_heal"
+      ]
+    },
+    {
+      "id": "shield_basic_1",
+      "name": "Shield Basique (v1)",
+      "description": "Un(e) shield standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Shield",
+      "weight": 0.9,
+      "basePrice": 13,
+      "stackable": false,
+      "effectId": "shield_block_light",
+      "effects": [
+        "shield_block_light"
+      ]
+    },
+    {
+      "id": "shield_basic_2",
+      "name": "Shield Basique (v2)",
+      "description": "Un(e) shield standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Shield",
+      "weight": 1.0,
+      "basePrice": 16,
+      "stackable": false,
+      "effectId": "shield_block_light",
+      "effects": [
+        "shield_block_light"
+      ]
+    },
+    {
+      "id": "shield_basic_3",
+      "name": "Shield Basique (v3)",
+      "description": "Un(e) shield standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Shield",
+      "weight": 1.1,
+      "basePrice": 19,
+      "stackable": false,
+      "effectId": "shield_block_light",
+      "effects": [
+        "shield_block_light"
+      ]
+    },
+    {
+      "id": "shield_basic_4",
+      "name": "Shield Basique (v4)",
+      "description": "Un(e) shield standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Shield",
+      "weight": 1.2,
+      "basePrice": 22,
+      "stackable": false,
+      "effectId": "shield_block_light",
+      "effects": [
+        "shield_block_light"
+      ]
+    },
+    {
+      "id": "shield_basic_5",
+      "name": "Shield Basique (v5)",
+      "description": "Un(e) shield standard offrant une protection ou un bonus de base.",
+      "type": "Armor",
+      "equipmentSlot": "Shield",
+      "weight": 1.3,
+      "basePrice": 25,
+      "stackable": false,
+      "effectId": "shield_block_light",
+      "effects": [
+        "shield_block_light"
+      ]
+    },
+    {
+      "id": "accessory_basic_1",
+      "name": "Accessory Basique (v1)",
+      "description": "Un(e) accessory standard offrant une protection ou un bonus de base.",
+      "type": "Accessory",
+      "equipmentSlot": "Accessory",
+      "weight": 0.9,
+      "basePrice": 13,
+      "stackable": false,
+      "effectId": "accessory_misc_boost",
+      "effects": [
+        "accessory_misc_boost"
+      ]
+    },
+    {
+      "id": "accessory_basic_2",
+      "name": "Accessory Basique (v2)",
+      "description": "Un(e) accessory standard offrant une protection ou un bonus de base.",
+      "type": "Accessory",
+      "equipmentSlot": "Accessory",
+      "weight": 1.0,
+      "basePrice": 16,
+      "stackable": false,
+      "effectId": "accessory_misc_boost",
+      "effects": [
+        "accessory_misc_boost"
+      ]
+    },
+    {
+      "id": "accessory_basic_3",
+      "name": "Accessory Basique (v3)",
+      "description": "Un(e) accessory standard offrant une protection ou un bonus de base.",
+      "type": "Accessory",
+      "equipmentSlot": "Accessory",
+      "weight": 1.1,
+      "basePrice": 19,
+      "stackable": false,
+      "effectId": "accessory_misc_boost",
+      "effects": [
+        "accessory_misc_boost"
+      ]
+    },
+    {
+      "id": "accessory_basic_4",
+      "name": "Accessory Basique (v4)",
+      "description": "Un(e) accessory standard offrant une protection ou un bonus de base.",
+      "type": "Accessory",
+      "equipmentSlot": "Accessory",
+      "weight": 1.2,
+      "basePrice": 22,
+      "stackable": false,
+      "effectId": "accessory_misc_boost",
+      "effects": [
+        "accessory_misc_boost"
+      ]
+    },
+    {
+      "id": "accessory_basic_5",
+      "name": "Accessory Basique (v5)",
+      "description": "Un(e) accessory standard offrant une protection ou un bonus de base.",
+      "type": "Accessory",
+      "equipmentSlot": "Accessory",
+      "weight": 1.3,
+      "basePrice": 25,
+      "stackable": false,
+      "effectId": "accessory_misc_boost",
+      "effects": [
+        "accessory_misc_boost"
+      ]
+    }
+  ]
+}

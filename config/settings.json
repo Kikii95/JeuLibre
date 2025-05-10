@@ -1,0 +1,34 @@
+{
+    "projects": {
+        "Engine": {
+            "additionalDependencies": ["sfml-graphics-s-d.lib; sfml-window-s-d.lib; sfml-audio-s-d.lib; sfml-network-s-d.lib; sfml-system-s-d.lib; opengl32.lib; freetype.lib; winmm.lib; gdi32.lib; flac.lib; vorbisenc.lib; vorbisfile.lib; vorbis.lib; ogg.lib; ws2_32.lib;"],
+            "additionalIncludeDirectories": ["$(ProjectDir)..\\..\\SFML-3.0.0\\include"],
+            "additionalLibraryDirectories": ["$(ProjectDir)..\\..\\SFML-3.0.0\\lib"],
+            "dependencies": [],
+            "dependents": [],
+            "guid": "518F4DAC-1CEE-56C8-1B03-7EE96FA67D92",
+            "lib": true,
+            "pch": true,
+            "preprocessorDefinitions": ["SFML_STATIC"],
+            "vcpkg": false,
+            "window": false
+        },
+        "Game": {
+            "additionalDependencies": ["Engine.lib; sfml-graphics-s-d.lib; sfml-window-s-d.lib; sfml-audio-s-d.lib; sfml-network-s-d.lib; sfml-system-s-d.lib; opengl32.lib; freetype.lib; winmm.lib; gdi32.lib; flac.lib; vorbisenc.lib; vorbisfile.lib; vorbis.lib; ogg.lib; ws2_32.lib;"],
+            "additionalIncludeDirectories": ["$(SolutionDir)..\\..\\src\\Engine; $(ProjectDir)..\\..\\SFML-3.0.0\\include"],
+            "additionalLibraryDirectories": ["$(SolutionDir)Engine\\Build\\Debug; $(ProjectDir)..\\..\\SFML-3.0.0\\lib"],
+            "dependencies": ["Engine"],
+            "dependents": [],
+            "guid": "78A82E8E-2029-2222-25C8-145759981EBB",
+            "lib": false,
+            "pch": true,
+            "preprocessorDefinitions": ["SFML_STATIC"],
+            "vcpkg": false,
+            "window": false
+        }
+    },
+    "solution_guid": "50E21C6A-2A7D-60ED-4393-51F46B465B9C",
+    "solution_name": "JeuLibre",
+    "startup_project": "Game",
+    "version": "1.17.4"
+}

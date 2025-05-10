@@ -1,0 +1,281 @@
+{
+  "__meta__": {
+    "legend": {
+      "id": "Identifiant unique du profil",
+      "attack": "Puissance d'attaque",
+      "defense": "Reduction des degats",
+      "speed": "Initiative / deplacement",
+      "crit": "Taux de critique (%)",
+      "range": "Portee d'attaque (en cases, min 1)",
+      "accuracy": "Chance de toucher (%) (min recommande : 70)",
+      "luck": "Influence sur evenements / loot (%)"
+    }
+  },
+  "stats": [
+    {
+      "id": "player",
+      "health": 100,
+      "attack": 10,
+      "defense": 5,
+      "speed": 8,
+      "crit": 15,
+      "range": 1,
+      "accuracy": 80,
+      "luck": 100,
+      "texture": "../../res/Game/enemies/player.png"
+    },
+    {
+      "id": "thief",
+      "health": 75,
+      "attack": 8,
+      "defense": 4,
+      "speed": 6,
+      "crit": 15,
+      "range": 1,
+      "accuracy": 90,
+      "luck": 10,
+      "texture": "../../res/Game/enemies/thief.png",
+      "size": [
+        114,
+        99
+      ]
+    },
+    {
+      "id": "merchant",
+      "health": 100,
+      "attack": 2,
+      "defense": 3,
+      "speed": 5,
+      "crit": 0,
+      "range": 1,
+      "accuracy": 75,
+      "luck": 20,
+      "texture": "../../res/Game/enemies/merchant.png"
+      
+    },
+    {
+      "id": "soldier",
+      "health": 120,
+      "attack": 10,
+      "defense": 8,
+      "speed": 4,
+      "crit": 10,
+      "range": 1,
+      "accuracy": 85,
+      "luck": 5,
+      "texture": "../../res/Game/enemies/soldier.png",
+      "size": [
+        69,
+        75
+      ]
+    },
+    {
+      "id": "captain",
+      "health": 100,
+      "attack": 15,
+      "defense": 10,
+      "speed": 5,
+      "crit": 12,
+      "range": 1,
+      "accuracy": 90,
+      "luck": 12,
+      "texture": "../../res/Game/enemies/captain.png",
+      "size": [
+        120,
+        105
+      ]
+    },
+    {
+      "id": "hunter",
+      "health": 100,
+      "attack": 9,
+      "defense": 5,
+      "speed": 6,
+      "crit": 18,
+      "range": 3,
+      "accuracy": 95,
+      "luck": 8,
+      "texture": "../../res/Game/enemies/hunter.png",
+      "size": [
+        153,
+        279
+      ]
+    },
+    {
+      "id": "healer",
+      "health": 100,
+      "attack": 3,
+      "defense": 4,
+      "speed": 5,
+      "crit": 0,
+      "range": 2,
+      "accuracy": 80,
+      "luck": 15,
+      "texture": "../../res/Game/enemies/healer.png",
+      "size": [
+        99,
+        165
+      ]
+    },
+    {
+      "id": "assassin",
+      "health": 70,
+      "attack": 14,
+      "defense": 3,
+      "speed": 8,
+      "crit": 25,
+      "range": 1,
+      "accuracy": 95,
+      "luck": 10,
+      "texture": "../../res/Game/enemies/assassin.png",
+      "size": [
+        120,
+        111
+      ]
+    },
+    {
+      "id": "brute",
+      "health": 150,
+      "attack": 18,
+      "defense": 10,
+      "speed": 3,
+      "crit": 5,
+      "range": 1,
+      "accuracy": 75,
+      "luck": 4,
+      "texture": "../../res/Game/enemies/brute.png",
+      "size": [
+        111,
+        120
+      ]
+    },
+    {
+      "id": "archer",
+      "health": 80,
+      "attack": 11,
+      "defense": 3,
+      "speed": 6,
+      "crit": 20,
+      "range": 4,
+      "accuracy": 90,
+      "luck": 8,
+      "texture": "../../res/Game/enemies/archer.png",
+      "size": [
+        99,
+        168
+      ]
+    },
+    {
+      "id": "mage",
+      "health": 90,
+      "attack": 16,
+      "defense": 2,
+      "speed": 5,
+      "crit": 10,
+      "range": 3,
+      "accuracy": 85,
+      "luck": 15,
+      "texture": "../../res/Game/enemies/mage.png",
+      "size": [
+        99,
+        162
+      ]
+    },
+    {
+      "id": "necromancer",
+      "health": 110,
+      "attack": 13,
+      "defense": 6,
+      "speed": 4,
+      "crit": 12,
+      "range": 3,
+      "accuracy": 80,
+      "luck": 20,
+      "texture": "../../res/Game/enemies/necromancer.png",
+      "size": [
+        123,
+        159
+      ]
+    },
+    {
+      "id": "guardian",
+      "health": 180,
+      "attack": 10,
+      "defense": 15,
+      "speed": 2,
+      "crit": 5,
+      "range": 1,
+      "accuracy": 70,
+      "luck": 5,
+      "texture": "../../res/Game/enemies/guardian.png",
+      "size": [
+        198,
+        213
+      ]
+    },
+    {
+      "id": "pyromancer",
+      "health": 85,
+      "attack": 20,
+      "defense": 3,
+      "speed": 5,
+      "crit": 18,
+      "range": 2,
+      "accuracy": 85,
+      "luck": 10,
+      "texture": "../../res/Game/enemies/pyromancer.png",
+      "size": [
+        60,
+        81
+      ]
+    },
+    {
+      "id": "shaman",
+      "health": 100,
+      "attack": 7,
+      "defense": 4,
+      "speed": 5,
+      "crit": 0,
+      "range": 2,
+      "accuracy": 75,
+      "luck": 25,
+      "texture": "../../res/Game/enemies/shaman.png",
+      "size": [
+        75,
+        111
+      ]
+    },
+    {
+      "id": "beastmaster",
+      "health": 120,
+      "attack": 12,
+      "defense": 6,
+      "speed": 6,
+      "crit": 10,
+      "range": 1,
+      "accuracy": 85,
+      "luck": 18,
+      "texture": "../../res/Game/enemies/beastmaster.png",
+      "size": [
+        102,
+        96
+      ]
+    },
+    {
+      "id": "shadowblade",
+      "health": 90,
+      "attack": 17,
+      "defense": 5,
+      "speed": 7,
+      "crit": 30,
+      "range": 1,
+      "accuracy": 95,
+      "luck": 12,
+      "texture": "../../res/Game/enemies/shadowblade.png",
+      "size": [
+        105,
+        90
+      ]
+    }
+  ]
+}

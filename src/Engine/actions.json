@@ -1,0 +1,57 @@
+{
+  "__meta__": {
+    "legend": {
+      "id": "Identifiant unique de l'action",
+      "name": "Nom visible pour le joueur",
+      "type": "Type : Use, Gather, Inspect, Interact",
+      "targetType": "Type de cible (item, ressource, element interactif)",
+      "effectId": "Effet applique (si 'use')",
+      "itemId": "Item utilise ou requis (optionnel)",
+      "value": "Quantite (ressource recoltee ou autre)"
+    }
+  },
+
+  "actions": [
+    {
+      "id": "gather_wood",
+      "name": "Recolter du bois",
+      "type": "Gather",
+      "targetType": "tree",
+      "value": 1
+    },
+    {
+      "id": "gather_fish",
+      "name": "Pecher",
+      "type": "Gather",
+      "targetType": "fish",
+      "value": 1
+    },
+    {
+      "id": "gather_ore",
+      "name": "Miner du minerai",
+      "type": "Gather",
+      "targetType": "ore",
+      "value": 1
+    },
+    {
+      "id": "inspect_area",
+      "name": "Inspecter la zone",
+      "type": "Inspect",
+      "targetType": "terrain"
+    },
+    {
+      "id": "interact_lever",
+      "name": "Activer le levier",
+      "type": "Interact",
+      "targetType": "lever"
+    },
+    {
+      "id": "use_healing_potion",
+      "name": "Utiliser une potion",
+      "type": "Use",
+      "targetType": "item",
+      "itemId": "potion_small",
+      "effectId": "heal_small"
+    }
+  ]
+}

@@ -1,0 +1,1112 @@
+{
+  "__meta__": {
+    "legend": {
+      "id": "Identifiant unique de l'effet (utilise dans les items, competences, etc.)",
+      "name": "Nom affiche",
+      "description": "Texte descriptif",
+      "duration": "Duree en tours",
+      "type": "buff ou debuff",
+      "statModifiers": "Modifications de stats (attaque, defense...)",
+      "tickDamage": "Degats infliges a chaque tour (optionnel)",
+      "icon": "Nom du fichier icone (optionnel)"
+    }
+  },
+  "effects": [
+    {
+      "id": "heal_small",
+      "name": "Petite guerison",
+      "description": "Restaure legerement les points de vie.",
+      "type": "buff",
+      "statModifiers": {},
+      "tickDamage": 0,
+      "duration": 1,
+      "healAmount": 20,
+      "icon": "heal_icon.png"
+    },
+    {
+      "id": "regen_medium",
+      "name": "Regeneration",
+      "description": "Regenere des points de vie a chaque tour.",
+      "type": "buff",
+      "statModifiers": {},
+      "tickDamage": 0,
+      "tickHeal": 1,
+      "duration": 10,
+      "healAmount": 0,
+      "icon": "regen_icon.png"
+    },
+    {
+      "id": "boost_attack",
+      "name": "Boost d'attaque",
+      "description": "Augmente temporairement l'attaque.",
+      "type": "buff",
+      "statModifiers": {
+        "attack": 10
+      },
+      "tickDamage": 0,
+      "duration": 1,
+      "healAmount": 0,
+      "icon": "atk_up.png"
+    },
+    {
+      "id": "boost_crit",
+      "name": "Vision percante",
+      "description": "Augmente drastiquement le taux de critique.",
+      "type": "buff",
+      "statModifiers": {
+        "crit": 25
+      },
+      "tickDamage": 0,
+      "duration": 2,
+      "healAmount": 0,
+      "icon": "crit_up.png"
+    },
+    {
+      "id": "boost_defense",
+      "name": "Peau de pierre",
+      "description": "Renforce la defense temporairement.",
+      "type": "buff",
+      "statModifiers": {
+        "defense": 15
+      },
+      "tickDamage": 0,
+      "duration": 3,
+      "healAmount": 0,
+      "icon": "def_up.png"
+    },
+    {
+      "id": "poison_small",
+      "name": "Poison leger",
+      "description": "Inflige des degats de poison a chaque tour.",
+      "type": "debuff",
+      "statModifiers": {},
+      "tickDamage": 1,
+      "duration": 10,
+      "healAmount": 0,
+      "icon": "poison.png"
+    },
+    {
+      "id": "poison_strong",
+      "name": "Poison violent",
+      "description": "Inflige de lourds degats a chaque tour.",
+      "type": "debuff",
+      "statModifiers": {},
+      "tickDamage": 3,
+      "duration": 15,
+      "healAmount": 0,
+      "icon": "poison_big.png"
+    },
+    {
+      "id": "curse_weakness",
+      "name": "Malediction de faiblesse",
+      "description": "Reduit l'attaque de la cible.",
+      "type": "debuff",
+      "statModifiers": {
+        "attack": -10
+      },
+      "tickDamage": 0,
+      "duration": 3,
+      "healAmount": 0,
+      "icon": "curse.png"
+    },
+    {
+      "id": "burn",
+      "name": "Brulure",
+      "description": "Inflige des degats et reduit la defense.",
+      "type": "debuff",
+      "statModifiers": {
+        "defense": -5
+      },
+      "tickDamage": 7,
+      "duration": 3,
+      "healAmount": 0,
+      "icon": "burn.png"
+    },
+    {
+      "id": "bless_luck",
+      "name": "Benediction de la chance",
+      "description": "Augmente legerement la precision et le crit.",
+      "type": "buff",
+      "statModifiers": {
+        "accuracy": 10,
+        "crit": 5
+      },
+      "tickDamage": 0,
+      "duration": 3,
+      "healAmount": 0,
+      "icon": "luck.png"
+    },
+    {
+      "id": "heal_small_v1",
+      "name": "Petite guerison +1",
+      "description": "Restaure legerement les points de vie. (Niveau 1)",
+      "type": "buff",
+      "statModifiers": {},
+      "tickDamage": 0,
+      "duration": 2,
+      "healAmount": 28,
+      "icon": "heal_icon.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "heal_small_v2",
+      "name": "Petite guerison +2",
+      "description": "Restaure legerement les points de vie. (Niveau 2)",
+      "type": "buff",
+      "statModifiers": {},
+      "tickDamage": 0,
+      "duration": 3,
+      "healAmount": 36,
+      "icon": "heal_icon.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "heal_small_v3",
+      "name": "Petite guerison +3",
+      "description": "Restaure legerement les points de vie. (Niveau 3)",
+      "type": "buff",
+      "statModifiers": {},
+      "tickDamage": 0,
+      "duration": 4,
+      "healAmount": 44,
+      "icon": "heal_icon.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "heal_small_v4",
+      "name": "Petite guerison +4",
+      "description": "Restaure legerement les points de vie. (Niveau 4)",
+      "type": "buff",
+      "statModifiers": {},
+      "tickDamage": 0,
+      "duration": 5,
+      "healAmount": 52,
+      "icon": "heal_icon.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "heal_small_v5",
+      "name": "Petite guerison +5",
+      "description": "Restaure legerement les points de vie. (Niveau 5)",
+      "type": "buff",
+      "statModifiers": {},
+      "tickDamage": 0,
+      "duration": 6,
+      "healAmount": 60,
+      "icon": "heal_icon.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "regen_medium_v1",
+      "name": "Regeneration +1",
+      "description": "Regenere des points de vie a chaque tour. (Niveau 1)",
+      "type": "buff",
+      "statModifiers": {},
+      "tickDamage": 0,
+      "tickHeal": 1,
+      "duration": 11,
+      "healAmount": 0,
+      "icon": "regen_icon.png"
+    },
+    {
+      "id": "regen_medium_v2",
+      "name": "Regeneration +2",
+      "description": "Regenere des points de vie a chaque tour. (Niveau 2)",
+      "type": "buff",
+      "statModifiers": {},
+      "tickDamage": 0,
+      "tickHeal": 1,
+      "duration": 12,
+      "healAmount": 0,
+      "icon": "regen_icon.png"
+    },
+    {
+      "id": "regen_medium_v3",
+      "name": "Regeneration +3",
+      "description": "Regenere des points de vie a chaque tour. (Niveau 3)",
+      "type": "buff",
+      "statModifiers": {},
+      "tickDamage": 0,
+      "tickHeal": 2,
+      "duration": 13,
+      "healAmount": 0,
+      "icon": "regen_icon.png"
+    },
+    {
+      "id": "regen_medium_v4",
+      "name": "Regeneration +4",
+      "description": "Regenere des points de vie a chaque tour. (Niveau 4)",
+      "type": "buff",
+      "statModifiers": {},
+      "tickDamage": 0,
+      "tickHeal": 2,
+      "duration": 14,
+      "healAmount": 0,
+      "icon": "regen_icon.png"
+    },
+    {
+      "id": "regen_medium_v5",
+      "name": "Regeneration +5",
+      "description": "Regenere des points de vie a chaque tour. (Niveau 5)",
+      "type": "buff",
+      "statModifiers": {},
+      "tickDamage": 0,
+      "tickHeal": 3,
+      "duration": 15,
+      "healAmount": 0,
+      "icon": "regen_icon.png"
+    },
+    {
+      "id": "boost_attack_v1",
+      "name": "Boost d'attaque +1",
+      "description": "Augmente temporairement l'attaque. (Niveau 1)",
+      "type": "buff",
+      "statModifiers": {
+        "attack": 15
+      },
+      "tickDamage": 0,
+      "duration": 2,
+      "healAmount": 0,
+      "icon": "atk_up.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "boost_attack_v2",
+      "name": "Boost d'attaque +2",
+      "description": "Augmente temporairement l'attaque. (Niveau 2)",
+      "type": "buff",
+      "statModifiers": {
+        "attack": 20
+      },
+      "tickDamage": 0,
+      "duration": 3,
+      "healAmount": 0,
+      "icon": "atk_up.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "boost_attack_v3",
+      "name": "Boost d'attaque +3",
+      "description": "Augmente temporairement l'attaque. (Niveau 3)",
+      "type": "buff",
+      "statModifiers": {
+        "attack": 25
+      },
+      "tickDamage": 0,
+      "duration": 4,
+      "healAmount": 0,
+      "icon": "atk_up.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "boost_attack_v4",
+      "name": "Boost d'attaque +4",
+      "description": "Augmente temporairement l'attaque. (Niveau 4)",
+      "type": "buff",
+      "statModifiers": {
+        "attack": 30
+      },
+      "tickDamage": 0,
+      "duration": 5,
+      "healAmount": 0,
+      "icon": "atk_up.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "boost_attack_v5",
+      "name": "Boost d'attaque +5",
+      "description": "Augmente temporairement l'attaque. (Niveau 5)",
+      "type": "buff",
+      "statModifiers": {
+        "attack": 35
+      },
+      "tickDamage": 0,
+      "duration": 6,
+      "healAmount": 0,
+      "icon": "atk_up.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "boost_crit_v1",
+      "name": "Vision percante +1",
+      "description": "Augmente drastiquement le taux de critique. (Niveau 1)",
+      "type": "buff",
+      "statModifiers": {
+        "crit": 37
+      },
+      "tickDamage": 0,
+      "duration": 3,
+      "healAmount": 0,
+      "icon": "crit_up.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "boost_crit_v2",
+      "name": "Vision percante +2",
+      "description": "Augmente drastiquement le taux de critique. (Niveau 2)",
+      "type": "buff",
+      "statModifiers": {
+        "crit": 50
+      },
+      "tickDamage": 0,
+      "duration": 4,
+      "healAmount": 0,
+      "icon": "crit_up.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "boost_crit_v3",
+      "name": "Vision percante +3",
+      "description": "Augmente drastiquement le taux de critique. (Niveau 3)",
+      "type": "buff",
+      "statModifiers": {
+        "crit": 62
+      },
+      "tickDamage": 0,
+      "duration": 5,
+      "healAmount": 0,
+      "icon": "crit_up.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "boost_crit_v4",
+      "name": "Vision percante +4",
+      "description": "Augmente drastiquement le taux de critique. (Niveau 4)",
+      "type": "buff",
+      "statModifiers": {
+        "crit": 75
+      },
+      "tickDamage": 0,
+      "duration": 6,
+      "healAmount": 0,
+      "icon": "crit_up.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "boost_crit_v5",
+      "name": "Vision percante +5",
+      "description": "Augmente drastiquement le taux de critique. (Niveau 5)",
+      "type": "buff",
+      "statModifiers": {
+        "crit": 87
+      },
+      "tickDamage": 0,
+      "duration": 7,
+      "healAmount": 0,
+      "icon": "crit_up.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "boost_defense_v1",
+      "name": "Peau de pierre +1",
+      "description": "Renforce la defense temporairement. (Niveau 1)",
+      "type": "buff",
+      "statModifiers": {
+        "defense": 22
+      },
+      "tickDamage": 0,
+      "duration": 4,
+      "healAmount": 0,
+      "icon": "def_up.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "boost_defense_v2",
+      "name": "Peau de pierre +2",
+      "description": "Renforce la defense temporairement. (Niveau 2)",
+      "type": "buff",
+      "statModifiers": {
+        "defense": 30
+      },
+      "tickDamage": 0,
+      "duration": 5,
+      "healAmount": 0,
+      "icon": "def_up.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "boost_defense_v3",
+      "name": "Peau de pierre +3",
+      "description": "Renforce la defense temporairement. (Niveau 3)",
+      "type": "buff",
+      "statModifiers": {
+        "defense": 37
+      },
+      "tickDamage": 0,
+      "duration": 6,
+      "healAmount": 0,
+      "icon": "def_up.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "boost_defense_v4",
+      "name": "Peau de pierre +4",
+      "description": "Renforce la defense temporairement. (Niveau 4)",
+      "type": "buff",
+      "statModifiers": {
+        "defense": 45
+      },
+      "tickDamage": 0,
+      "duration": 7,
+      "healAmount": 0,
+      "icon": "def_up.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "boost_defense_v5",
+      "name": "Peau de pierre +5",
+      "description": "Renforce la defense temporairement. (Niveau 5)",
+      "type": "buff",
+      "statModifiers": {
+        "defense": 52
+      },
+      "tickDamage": 0,
+      "duration": 8,
+      "healAmount": 0,
+      "icon": "def_up.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "poison_small_v1",
+      "name": "Poison leger +1",
+      "description": "Inflige des degats de poison a chaque tour. (Niveau 1)",
+      "type": "debuff",
+      "statModifiers": {},
+      "tickDamage": 1,
+      "duration": 11,
+      "healAmount": 0,
+      "icon": "poison.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "poison_small_v2",
+      "name": "Poison leger +2",
+      "description": "Inflige des degats de poison a chaque tour. (Niveau 2)",
+      "type": "debuff",
+      "statModifiers": {},
+      "tickDamage": 2,
+      "duration": 12,
+      "healAmount": 0,
+      "icon": "poison.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "poison_small_v3",
+      "name": "Poison leger +3",
+      "description": "Inflige des degats de poison a chaque tour. (Niveau 3)",
+      "type": "debuff",
+      "statModifiers": {},
+      "tickDamage": 2,
+      "duration": 13,
+      "healAmount": 0,
+      "icon": "poison.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "poison_small_v4",
+      "name": "Poison leger +4",
+      "description": "Inflige des degats de poison a chaque tour. (Niveau 4)",
+      "type": "debuff",
+      "statModifiers": {},
+      "tickDamage": 3,
+      "duration": 14,
+      "healAmount": 0,
+      "icon": "poison.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "poison_small_v5",
+      "name": "Poison leger +5",
+      "description": "Inflige des degats de poison a chaque tour. (Niveau 5)",
+      "type": "debuff",
+      "statModifiers": {},
+      "tickDamage": 3,
+      "duration": 15,
+      "healAmount": 0,
+      "icon": "poison.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "poison_strong_v1",
+      "name": "Poison violent +1",
+      "description": "Inflige de lourds degats a chaque tour. (Niveau 1)",
+      "type": "debuff",
+      "statModifiers": {},
+      "tickDamage": 4,
+      "duration": 16,
+      "healAmount": 0,
+      "icon": "poison_big.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "poison_strong_v2",
+      "name": "Poison violent +2",
+      "description": "Inflige de lourds degats a chaque tour. (Niveau 2)",
+      "type": "debuff",
+      "statModifiers": {},
+      "tickDamage": 6,
+      "duration": 17,
+      "healAmount": 0,
+      "icon": "poison_big.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "poison_strong_v3",
+      "name": "Poison violent +3",
+      "description": "Inflige de lourds degats a chaque tour. (Niveau 3)",
+      "type": "debuff",
+      "statModifiers": {},
+      "tickDamage": 7,
+      "duration": 18,
+      "healAmount": 0,
+      "icon": "poison_big.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "poison_strong_v4",
+      "name": "Poison violent +4",
+      "description": "Inflige de lourds degats a chaque tour. (Niveau 4)",
+      "type": "debuff",
+      "statModifiers": {},
+      "tickDamage": 9,
+      "duration": 19,
+      "healAmount": 0,
+      "icon": "poison_big.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "poison_strong_v5",
+      "name": "Poison violent +5",
+      "description": "Inflige de lourds degats a chaque tour. (Niveau 5)",
+      "type": "debuff",
+      "statModifiers": {},
+      "tickDamage": 10,
+      "duration": 20,
+      "healAmount": 0,
+      "icon": "poison_big.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "curse_weakness_v1",
+      "name": "Malediction de faiblesse +1",
+      "description": "Reduit l'attaque de la cible. (Niveau 1)",
+      "type": "debuff",
+      "statModifiers": {
+        "attack": -15
+      },
+      "tickDamage": 0,
+      "duration": 4,
+      "healAmount": 0,
+      "icon": "curse.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "curse_weakness_v2",
+      "name": "Malediction de faiblesse +2",
+      "description": "Reduit l'attaque de la cible. (Niveau 2)",
+      "type": "debuff",
+      "statModifiers": {
+        "attack": -20
+      },
+      "tickDamage": 0,
+      "duration": 5,
+      "healAmount": 0,
+      "icon": "curse.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "curse_weakness_v3",
+      "name": "Malediction de faiblesse +3",
+      "description": "Reduit l'attaque de la cible. (Niveau 3)",
+      "type": "debuff",
+      "statModifiers": {
+        "attack": -25
+      },
+      "tickDamage": 0,
+      "duration": 6,
+      "healAmount": 0,
+      "icon": "curse.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "curse_weakness_v4",
+      "name": "Malediction de faiblesse +4",
+      "description": "Reduit l'attaque de la cible. (Niveau 4)",
+      "type": "debuff",
+      "statModifiers": {
+        "attack": -30
+      },
+      "tickDamage": 0,
+      "duration": 7,
+      "healAmount": 0,
+      "icon": "curse.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "curse_weakness_v5",
+      "name": "Malediction de faiblesse +5",
+      "description": "Reduit l'attaque de la cible. (Niveau 5)",
+      "type": "debuff",
+      "statModifiers": {
+        "attack": -35
+      },
+      "tickDamage": 0,
+      "duration": 8,
+      "healAmount": 0,
+      "icon": "curse.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "burn_v1",
+      "name": "Brûlure +1",
+      "description": "Inflige des degats et reduit la defense. (Niveau 1)",
+      "type": "debuff",
+      "statModifiers": {
+        "defense": -7
+      },
+      "tickDamage": 10,
+      "duration": 4,
+      "healAmount": 0,
+      "icon": "burn.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "burn_v2",
+      "name": "Brûlure +2",
+      "description": "Inflige des degats et reduit la defense. (Niveau 2)",
+      "type": "debuff",
+      "statModifiers": {
+        "defense": -10
+      },
+      "tickDamage": 14,
+      "duration": 5,
+      "healAmount": 0,
+      "icon": "burn.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "burn_v3",
+      "name": "Brûlure +3",
+      "description": "Inflige des degats et reduit la defense. (Niveau 3)",
+      "type": "debuff",
+      "statModifiers": {
+        "defense": -12
+      },
+      "tickDamage": 17,
+      "duration": 6,
+      "healAmount": 0,
+      "icon": "burn.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "burn_v4",
+      "name": "Brûlure +4",
+      "description": "Inflige des degats et reduit la defense. (Niveau 4)",
+      "type": "debuff",
+      "statModifiers": {
+        "defense": -15
+      },
+      "tickDamage": 21,
+      "duration": 7,
+      "healAmount": 0,
+      "icon": "burn.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "burn_v5",
+      "name": "Brûlure +5",
+      "description": "Inflige des degats et reduit la defense. (Niveau 5)",
+      "type": "debuff",
+      "statModifiers": {
+        "defense": -17
+      },
+      "tickDamage": 24,
+      "duration": 8,
+      "healAmount": 0,
+      "icon": "burn.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "bless_luck_v1",
+      "name": "Benediction de la chance +1",
+      "description": "Augmente legerement la precision et le crit. (Niveau 1)",
+      "type": "buff",
+      "statModifiers": {
+        "accuracy": 15,
+        "crit": 7
+      },
+      "tickDamage": 0,
+      "duration": 4,
+      "healAmount": 0,
+      "icon": "luck.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "bless_luck_v2",
+      "name": "Benediction de la chance +2",
+      "description": "Augmente legerement la precision et le crit. (Niveau 2)",
+      "type": "buff",
+      "statModifiers": {
+        "accuracy": 20,
+        "crit": 10
+      },
+      "tickDamage": 0,
+      "duration": 5,
+      "healAmount": 0,
+      "icon": "luck.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "bless_luck_v3",
+      "name": "Benediction de la chance +3",
+      "description": "Augmente legerement la precision et le crit. (Niveau 3)",
+      "type": "buff",
+      "statModifiers": {
+        "accuracy": 25,
+        "crit": 12
+      },
+      "tickDamage": 0,
+      "duration": 6,
+      "healAmount": 0,
+      "icon": "luck.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "bless_luck_v4",
+      "name": "Benediction de la chance +4",
+      "description": "Augmente legerement la precision et le crit. (Niveau 4)",
+      "type": "buff",
+      "statModifiers": {
+        "accuracy": 30,
+        "crit": 15
+      },
+      "tickDamage": 0,
+      "duration": 7,
+      "healAmount": 0,
+      "icon": "luck.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "bless_luck_v5",
+      "name": "Benediction de la chance +5",
+      "description": "Augmente legerement la precision et le crit. (Niveau 5)",
+      "type": "buff",
+      "statModifiers": {
+        "accuracy": 35,
+        "crit": 17
+      },
+      "tickDamage": 0,
+      "duration": 8,
+      "healAmount": 0,
+      "icon": "luck.png",
+      "tickHeal": 0
+    },
+    {
+      "id": "armor_body_light",
+      "name": "Armure legere (corps)",
+      "description": "Confere une protection corporelle legere.",
+      "type": "buff",
+      "statModifiers": {
+        "defense": 10
+      },
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "icon": "armor_body_light.png"
+    },
+    {
+      "id": "armor_body_medium",
+      "name": "Armure moyenne (corps)",
+      "description": "Confere une protection corporelle moyenne.",
+      "type": "buff",
+      "statModifiers": {
+        "defense": 20
+      },
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "icon": "armor_body_medium.png"
+    },
+    {
+      "id": "armor_body_heavy",
+      "name": "Armure lourde (corps)",
+      "description": "Confere une forte protection corporelle.",
+      "type": "buff",
+      "statModifiers": {
+        "defense": 30,
+        "attack": -5
+      },
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "icon": "armor_body_heavy.png"
+    },
+    {
+      "id": "armor_head_light",
+      "name": "Casque leger",
+      "description": "Protege legerement la tête.",
+      "type": "buff",
+      "statModifiers": {
+        "defense": 5
+      },
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "icon": "armor_head_light.png"
+    },
+    {
+      "id": "armor_head_medium",
+      "name": "Casque moyen",
+      "description": "Protege efficacement la tête.",
+      "type": "buff",
+      "statModifiers": {
+        "defense": 10
+      },
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "icon": "armor_head_medium.png"
+    },
+    {
+      "id": "armor_head_heavy",
+      "name": "Casque lourd",
+      "description": "Offre une solide protection de la tête.",
+      "type": "buff",
+      "statModifiers": {
+        "defense": 15,
+        "accuracy": -5
+      },
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "icon": "armor_head_heavy.png"
+    },
+    {
+      "id": "armor_legs_light",
+      "name": "Jambieres legeres",
+      "description": "Effet primaire d'equipement : Jambieres legeres.",
+      "type": "buff",
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "statModifiers": {
+        "defense": 5,
+        "speed": 5
+      },
+      "icon": "armor_legs_light.png"
+    },
+    {
+      "id": "armor_legs_medium",
+      "name": "Jambieres moyennes",
+      "description": "Effet primaire d'equipement : Jambieres moyennes.",
+      "type": "buff",
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "statModifiers": {
+        "defense": 10
+      },
+      "icon": "armor_legs_medium.png"
+    },
+    {
+      "id": "armor_legs_heavy",
+      "name": "Jambieres lourdes",
+      "description": "Effet primaire d'equipement : Jambieres lourdes.",
+      "type": "buff",
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "statModifiers": {
+        "defense": 15,
+        "speed": -5
+      },
+      "icon": "armor_legs_heavy.png"
+    },
+    {
+      "id": "armor_feet_light",
+      "name": "Bottes legeres",
+      "description": "Effet primaire d'equipement : Bottes legeres.",
+      "type": "buff",
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "statModifiers": {
+        "speed": 10
+      },
+      "icon": "armor_feet_light.png"
+    },
+    {
+      "id": "armor_feet_medium",
+      "name": "Bottes moyennes",
+      "description": "Effet primaire d'equipement : Bottes moyennes.",
+      "type": "buff",
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "statModifiers": {
+        "speed": 5
+      },
+      "icon": "armor_feet_medium.png"
+    },
+    {
+      "id": "armor_feet_heavy",
+      "name": "Bottes lourdes",
+      "description": "Effet primaire d'equipement : Bottes lourdes.",
+      "type": "buff",
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "statModifiers": {
+        "defense": 5,
+        "speed": -5
+      },
+      "icon": "armor_feet_heavy.png"
+    },
+    {
+      "id": "armor_gloves_light",
+      "name": "Gants legers",
+      "description": "Effet primaire d'equipement : Gants legers.",
+      "type": "buff",
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "statModifiers": {
+        "accuracy": 5
+      },
+      "icon": "armor_gloves_light.png"
+    },
+    {
+      "id": "armor_gloves_medium",
+      "name": "Gants moyens",
+      "description": "Effet primaire d'equipement : Gants moyens.",
+      "type": "buff",
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "statModifiers": {
+        "defense": 3,
+        "accuracy": 3
+      },
+      "icon": "armor_gloves_medium.png"
+    },
+    {
+      "id": "armor_gloves_heavy",
+      "name": "Gants lourds",
+      "description": "Effet primaire d'equipement : Gants lourds.",
+      "type": "buff",
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "statModifiers": {
+        "defense": 6,
+        "accuracy": -2
+      },
+      "icon": "armor_gloves_heavy.png"
+    },
+    {
+      "id": "ring_luck_small",
+      "name": "Anneau porte-bonheur",
+      "description": "Effet primaire d'equipement : Anneau porte-bonheur.",
+      "type": "buff",
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "statModifiers": {
+        "luck": 5
+      },
+      "icon": "ring_luck_small.png"
+    },
+    {
+      "id": "ring_focus",
+      "name": "Anneau de concentration",
+      "description": "Effet primaire d'equipement : Anneau de concentration.",
+      "type": "buff",
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "statModifiers": {
+        "critical": 5
+      },
+      "icon": "ring_focus.png"
+    },
+    {
+      "id": "amulet_health",
+      "name": "Amulette de sante",
+      "description": "Effet primaire d'equipement : Amulette de sante.",
+      "type": "buff",
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "statModifiers": {
+        "maxHp": 20
+      },
+      "icon": "amulet_health.png"
+    },
+    {
+      "id": "amulet_protection",
+      "name": "Amulette de protection",
+      "description": "Effet primaire d'equipement : Amulette de protection.",
+      "type": "buff",
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "statModifiers": {
+        "defense": 8
+      },
+      "icon": "amulet_protection.png"
+    },
+    {
+      "id": "shield_small",
+      "name": "Petit bouclier",
+      "description": "Effet primaire d'equipement : Petit bouclier.",
+      "type": "buff",
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "statModifiers": {
+        "defense": 12
+      },
+      "icon": "shield_small.png"
+    },
+    {
+      "id": "shield_heavy",
+      "name": "Bouclier lourd",
+      "description": "Effet primaire d'equipement : Bouclier lourd.",
+      "type": "buff",
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "statModifiers": {
+        "defense": 20,
+        "speed": -5
+      },
+      "icon": "shield_heavy.png"
+    },
+    {
+      "id": "accessory_energy",
+      "name": "Accessoire d'energie",
+      "description": "Effet primaire d'equipement : Accessoire d'energie.",
+      "type": "buff",
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "statModifiers": {
+        "stamina": 10
+      },
+      "icon": "accessory_energy.png"
+    },
+    {
+      "id": "accessory_precision",
+      "name": "Accessoire de precision",
+      "description": "Effet primaire d'equipement : Accessoire de precision.",
+      "type": "buff",
+      "tickDamage": 0,
+      "duration": -1,
+      "healAmount": 0,
+      "statModifiers": {
+        "accuracy": 8
+      },
+      "icon": "accessory_precision.png"
+    }
+  ]
+}

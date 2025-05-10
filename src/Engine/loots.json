@@ -1,0 +1,703 @@
+{
+  "player": {
+    "money": {
+      "min": 50,
+      "max": 160
+    },
+    "items": [
+      {
+        "itemId": "weapon_dagger_iron",
+        "chance": 0.63,
+        "quantity": 2
+      },
+      {
+        "itemId": "consumable_heal_potion_small_var3",
+        "chance": 0.34,
+        "quantity": 2
+      },
+      {
+        "itemId": "resource_herb_healing_var3",
+        "chance": 0.28,
+        "quantity": 1
+      },
+      {
+        "itemId": "armor_outfit_chainmail_var1",
+        "chance": 0.41,
+        "quantity": 3
+      }
+    ]
+  },
+  "thief": {
+    "money": {
+      "min": 5,
+      "max": 25
+    },
+    "items": [
+      {
+        "itemId": "weapon_axe_woodcutter_var5",
+        "chance": 0.38,
+        "quantity": 3
+      },
+      {
+        "itemId": "consumable_buff_energy_drink_var9",
+        "chance": 0.44,
+        "quantity": 1
+      },
+      {
+        "itemId": "resource_fish_trout_var6",
+        "chance": 0.3,
+        "quantity": 1
+      },
+      {
+        "itemId": "armor_outfit_leather_var5",
+        "chance": 0.52,
+        "quantity": 2
+      },
+      {
+        "itemId": "head_basic_1",
+        "chance": 0.56,
+        "quantity": 1
+      },
+      {
+        "itemId": "feet_basic_2",
+        "chance": 0.54,
+        "quantity": 3
+      },
+      {
+        "itemId": "amulet_basic_3",
+        "chance": 0.33,
+        "quantity": 3
+      }
+    ]
+  },
+  "merchant": {
+    "money": {
+      "min": 10,
+      "max": 40
+    },
+    "items": [
+      {
+        "itemId": "weapon_dagger_iron",
+        "chance": 0.22,
+        "quantity": 3
+      },
+      {
+        "itemId": "consumable_buff_energy_drink_var5",
+        "chance": 0.21,
+        "quantity": 2
+      },
+      {
+        "itemId": "resource_fish_trout_var5",
+        "chance": 0.6,
+        "quantity": 2
+      },
+      {
+        "itemId": "armor_outfit_chainmail_var10",
+        "chance": 0.3,
+        "quantity": 1
+      },
+      {
+        "itemId": "head_basic_2",
+        "chance": 0.48,
+        "quantity": 3
+      },
+      {
+        "itemId": "feet_basic_3",
+        "chance": 0.58,
+        "quantity": 2
+      },
+      {
+        "itemId": "amulet_basic_4",
+        "chance": 0.27,
+        "quantity": 3
+      }
+    ]
+  },
+  "soldier": {
+    "money": {
+      "min": 2,
+      "max": 17
+    },
+    "items": [
+      {
+        "itemId": "weapon_sword_rusty_var10",
+        "chance": 0.37,
+        "quantity": 2
+      },
+      {
+        "itemId": "consumable_heal_food_meat_var3",
+        "chance": 0.3,
+        "quantity": 2
+      },
+      {
+        "itemId": "resource_fish_trout_var2",
+        "chance": 0.36,
+        "quantity": 1
+      },
+      {
+        "itemId": "armor_outfit_chainmail_var1",
+        "chance": 0.46,
+        "quantity": 3
+      },
+      {
+        "itemId": "head_basic_3",
+        "chance": 0.36,
+        "quantity": 1
+      },
+      {
+        "itemId": "feet_basic_4",
+        "chance": 0.42,
+        "quantity": 3
+      },
+      {
+        "itemId": "amulet_basic_5",
+        "chance": 0.59,
+        "quantity": 3
+      }
+    ]
+  },
+  "captain": {
+    "money": {
+      "min": 6,
+      "max": 28
+    },
+    "items": [
+      {
+        "itemId": "weapon_axe_woodcutter_var10",
+        "chance": 0.42,
+        "quantity": 2
+      },
+      {
+        "itemId": "consumable_heal_food_meat_var2",
+        "chance": 0.54,
+        "quantity": 3
+      },
+      {
+        "itemId": "resource_wood_oak_log_var8",
+        "chance": 0.33,
+        "quantity": 2
+      },
+      {
+        "itemId": "armor_outfit_leather_var6",
+        "chance": 0.62,
+        "quantity": 3
+      },
+      {
+        "itemId": "head_basic_4",
+        "chance": 0.43,
+        "quantity": 2
+      },
+      {
+        "itemId": "feet_basic_5",
+        "chance": 0.41,
+        "quantity": 3
+      },
+      {
+        "itemId": "shield_basic_1",
+        "chance": 0.56,
+        "quantity": 2
+      }
+    ]
+  },
+  "hunter": {
+    "money": {
+      "min": 4,
+      "max": 22
+    },
+    "items": [
+      {
+        "itemId": "weapon_axe_woodcutter_var4",
+        "chance": 0.25,
+        "quantity": 3
+      },
+      {
+        "itemId": "consumable_heal_potion_small_var1",
+        "chance": 0.2,
+        "quantity": 1
+      },
+      {
+        "itemId": "resource_mineral_iron_ore_var8",
+        "chance": 0.52,
+        "quantity": 2
+      },
+      {
+        "itemId": "armor_outfit_leather",
+        "chance": 0.56,
+        "quantity": 2
+      },
+      {
+        "itemId": "head_basic_5",
+        "chance": 0.33,
+        "quantity": 2
+      },
+      {
+        "itemId": "gloves_basic_1",
+        "chance": 0.36,
+        "quantity": 1
+      },
+      {
+        "itemId": "shield_basic_2",
+        "chance": 0.42,
+        "quantity": 3
+      }
+    ]
+  },
+  "healer": {
+    "money": {
+      "min": 7,
+      "max": 32
+    },
+    "items": [
+      {
+        "itemId": "weapon_bow_basic_var9",
+        "chance": 0.23,
+        "quantity": 1
+      },
+      {
+        "itemId": "consumable_heal_food_meat_var4",
+        "chance": 0.59,
+        "quantity": 1
+      },
+      {
+        "itemId": "resource_mineral_iron_ore_var3",
+        "chance": 0.48,
+        "quantity": 1
+      },
+      {
+        "itemId": "armor_outfit_chainmail_var9",
+        "chance": 0.41,
+        "quantity": 1
+      },
+      {
+        "itemId": "body_basic_1",
+        "chance": 0.48,
+        "quantity": 3
+      },
+      {
+        "itemId": "gloves_basic_2",
+        "chance": 0.3,
+        "quantity": 1
+      },
+      {
+        "itemId": "shield_basic_3",
+        "chance": 0.49,
+        "quantity": 3
+      }
+    ]
+  },
+  "assassin": {
+    "money": {
+      "min": 5,
+      "max": 25
+    },
+    "items": [
+      {
+        "itemId": "weapon_sword_rusty_var10",
+        "chance": 0.44,
+        "quantity": 1
+      },
+      {
+        "itemId": "consumable_buff_energy_drink_var4",
+        "chance": 0.52,
+        "quantity": 2
+      },
+      {
+        "itemId": "resource_mineral_iron_ore_var3",
+        "chance": 0.51,
+        "quantity": 3
+      },
+      {
+        "itemId": "armor_outfit_chainmail_var5",
+        "chance": 0.26,
+        "quantity": 1
+      },
+      {
+        "itemId": "body_basic_2",
+        "chance": 0.55,
+        "quantity": 1
+      },
+      {
+        "itemId": "gloves_basic_3",
+        "chance": 0.57,
+        "quantity": 2
+      },
+      {
+        "itemId": "shield_basic_4",
+        "chance": 0.39,
+        "quantity": 3
+      }
+    ]
+  },
+  "brute": {
+    "money": {
+      "min": 2,
+      "max": 16
+    },
+    "items": [
+      {
+        "itemId": "weapon_sword_rusty_var5",
+        "chance": 0.38,
+        "quantity": 3
+      },
+      {
+        "itemId": "consumable_heal_food_meat_var7",
+        "chance": 0.22,
+        "quantity": 1
+      },
+      {
+        "itemId": "resource_herb_healing_var5",
+        "chance": 0.45,
+        "quantity": 2
+      },
+      {
+        "itemId": "armor_outfit_chainmail_var5",
+        "chance": 0.36,
+        "quantity": 3
+      },
+      {
+        "itemId": "body_basic_3",
+        "chance": 0.32,
+        "quantity": 3
+      },
+      {
+        "itemId": "gloves_basic_4",
+        "chance": 0.48,
+        "quantity": 2
+      },
+      {
+        "itemId": "shield_basic_5",
+        "chance": 0.51,
+        "quantity": 3
+      }
+    ]
+  },
+  "archer": {
+    "money": {
+      "min": 4,
+      "max": 22
+    },
+    "items": [
+      {
+        "itemId": "weapon_sword_rusty_var3",
+        "chance": 0.34,
+        "quantity": 3
+      },
+      {
+        "itemId": "consumable_heal_food_meat_var3",
+        "chance": 0.62,
+        "quantity": 2
+      },
+      {
+        "itemId": "resource_wood_oak_log_var9",
+        "chance": 0.59,
+        "quantity": 3
+      },
+      {
+        "itemId": "armor_outfit_leather_var9",
+        "chance": 0.59,
+        "quantity": 2
+      },
+      {
+        "itemId": "body_basic_4",
+        "chance": 0.4,
+        "quantity": 1
+      },
+      {
+        "itemId": "gloves_basic_5",
+        "chance": 0.57,
+        "quantity": 3
+      },
+      {
+        "itemId": "accessory_basic_1",
+        "chance": 0.54,
+        "quantity": 2
+      }
+    ]
+  },
+  "mage": {
+    "money": {
+      "min": 7,
+      "max": 32
+    },
+    "items": [
+      {
+        "itemId": "weapon_bow_basic_var10",
+        "chance": 0.37,
+        "quantity": 3
+      },
+      {
+        "itemId": "consumable_buff_energy_drink_var9",
+        "chance": 0.39,
+        "quantity": 3
+      },
+      {
+        "itemId": "resource_herb_healing_var9",
+        "chance": 0.61,
+        "quantity": 2
+      },
+      {
+        "itemId": "armor_outfit_chainmail_var2",
+        "chance": 0.67,
+        "quantity": 1
+      },
+      {
+        "itemId": "body_basic_5",
+        "chance": 0.5,
+        "quantity": 2
+      },
+      {
+        "itemId": "ring_basic_1",
+        "chance": 0.26,
+        "quantity": 3
+      },
+      {
+        "itemId": "accessory_basic_2",
+        "chance": 0.44,
+        "quantity": 1
+      }
+    ]
+  },
+  "necromancer": {
+    "money": {
+      "min": 10,
+      "max": 40
+    },
+    "items": [
+      {
+        "itemId": "weapon_dagger_iron_var8",
+        "chance": 0.43,
+        "quantity": 3
+      },
+      {
+        "itemId": "consumable_heal_food_meat",
+        "chance": 0.45,
+        "quantity": 3
+      },
+      {
+        "itemId": "resource_mineral_iron_ore_var2",
+        "chance": 0.38,
+        "quantity": 3
+      },
+      {
+        "itemId": "armor_outfit_leather_var6",
+        "chance": 0.37,
+        "quantity": 1
+      },
+      {
+        "itemId": "legs_basic_1",
+        "chance": 0.48,
+        "quantity": 2
+      },
+      {
+        "itemId": "ring_basic_2",
+        "chance": 0.51,
+        "quantity": 1
+      },
+      {
+        "itemId": "accessory_basic_3",
+        "chance": 0.26,
+        "quantity": 2
+      }
+    ]
+  },
+  "guardian": {
+    "money": {
+      "min": 2,
+      "max": 17
+    },
+    "items": [
+      {
+        "itemId": "weapon_bow_basic_var3",
+        "chance": 0.38,
+        "quantity": 1
+      },
+      {
+        "itemId": "consumable_buff_herbal_tea_var7",
+        "chance": 0.35,
+        "quantity": 2
+      },
+      {
+        "itemId": "resource_herb_healing_var1",
+        "chance": 0.62,
+        "quantity": 1
+      },
+      {
+        "itemId": "armor_outfit_chainmail_var10",
+        "chance": 0.39,
+        "quantity": 2
+      },
+      {
+        "itemId": "legs_basic_2",
+        "chance": 0.27,
+        "quantity": 1
+      },
+      {
+        "itemId": "ring_basic_3",
+        "chance": 0.25,
+        "quantity": 2
+      },
+      {
+        "itemId": "accessory_basic_4",
+        "chance": 0.36,
+        "quantity": 1
+      }
+    ]
+  },
+  "pyromancer": {
+    "money": {
+      "min": 5,
+      "max": 25
+    },
+    "items": [
+      {
+        "itemId": "weapon_dagger_iron_var4",
+        "chance": 0.52,
+        "quantity": 1
+      },
+      {
+        "itemId": "consumable_buff_energy_drink_var9",
+        "chance": 0.32,
+        "quantity": 2
+      },
+      {
+        "itemId": "resource_wood_oak_log_var2",
+        "chance": 0.24,
+        "quantity": 3
+      },
+      {
+        "itemId": "armor_outfit_chainmail_var2",
+        "chance": 0.52,
+        "quantity": 1
+      },
+      {
+        "itemId": "legs_basic_3",
+        "chance": 0.46,
+        "quantity": 2
+      },
+      {
+        "itemId": "ring_basic_4",
+        "chance": 0.37,
+        "quantity": 3
+      },
+      {
+        "itemId": "accessory_basic_5",
+        "chance": 0.37,
+        "quantity": 3
+      }
+    ]
+  },
+  "shaman": {
+    "money": {
+      "min": 12,
+      "max": 47
+    },
+    "items": [
+      {
+        "itemId": "weapon_sword_rusty_var3",
+        "chance": 0.4,
+        "quantity": 2
+      },
+      {
+        "itemId": "consumable_heal_potion_small_var8",
+        "chance": 0.52,
+        "quantity": 2
+      },
+      {
+        "itemId": "resource_wood_oak_log_var7",
+        "chance": 0.34,
+        "quantity": 2
+      },
+      {
+        "itemId": "armor_outfit_chainmail_var2",
+        "chance": 0.57,
+        "quantity": 2
+      },
+      {
+        "itemId": "legs_basic_4",
+        "chance": 0.3,
+        "quantity": 2
+      },
+      {
+        "itemId": "ring_basic_5",
+        "chance": 0.33,
+        "quantity": 3
+      }
+    ]
+  },
+  "beastmaster": {
+    "money": {
+      "min": 9,
+      "max": 37
+    },
+    "items": [
+      {
+        "itemId": "weapon_dagger_iron_var2",
+        "chance": 0.25,
+        "quantity": 3
+      },
+      {
+        "itemId": "consumable_heal_potion_small_var4",
+        "chance": 0.59,
+        "quantity": 2
+      },
+      {
+        "itemId": "resource_wood_oak_log_var9",
+        "chance": 0.22,
+        "quantity": 3
+      },
+      {
+        "itemId": "armor_outfit_chainmail_var10",
+        "chance": 0.43,
+        "quantity": 1
+      },
+      {
+        "itemId": "legs_basic_5",
+        "chance": 0.54,
+        "quantity": 2
+      },
+      {
+        "itemId": "amulet_basic_1",
+        "chance": 0.42,
+        "quantity": 2
+      }
+    ]
+  },
+  "shadowblade": {
+    "money": {
+      "min": 6,
+      "max": 28
+    },
+    "items": [
+      {
+        "itemId": "weapon_bow_basic_var10",
+        "chance": 0.5,
+        "quantity": 1
+      },
+      {
+        "itemId": "consumable_heal_potion_small_var8",
+        "chance": 0.39,
+        "quantity": 2
+      },
+      {
+        "itemId": "resource_fish_trout",
+        "chance": 0.41,
+        "quantity": 2
+      },
+      {
+        "itemId": "armor_outfit_leather_var3",
+        "chance": 0.25,
+        "quantity": 1
+      },
+      {
+        "itemId": "feet_basic_1",
+        "chance": 0.4,
+        "quantity": 2
+      },
+      {
+        "itemId": "amulet_basic_2",
+        "chance": 0.58,
+        "quantity": 3
+      }
+    ]
+  }
+}
