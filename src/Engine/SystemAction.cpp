@@ -101,12 +101,12 @@ void SystemAction::UseItem(Entity* actor, const ItemInstance& instance) {
     if (def->type == ItemType::Weapon || def->type == ItemType::Armor || def->type == ItemType::Accessory) {
         if (instance.isEquipped) {
             equipSys->UnequipSlot(actor, def->equipmentSlot);
-            std::cout << "[Action] Objet déjà équipé, on le déséquipe.\n";
+            std::cout << "[Action] Objet deja equipe, on le desequipe.\n";
         }
         else {
-            std::cout << "[Action] Tentative d'équipement de l'objet : " << def->id << "\n";
+            std::cout << "[Action] Tentative d'equipement de l'objet : " << def->id << "\n";
             equipSys->EquipItemByInstance(actor, instance);
-            std::cout << "[Action] Objet équipé : " << def->id << "\n";
+            std::cout << "[Action] Objet equipe : " << def->id << "\n";
         }
     }
     else if (!def->effectId.empty()) {

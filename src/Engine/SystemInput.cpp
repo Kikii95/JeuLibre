@@ -222,14 +222,14 @@ void SystemInput::HandleMouseClicks(ComponentInput* input) {
 		SystemClickable* clickableSys = GameEngine::GetInstance().GetSystem<SystemClickable>();
 		if (clickableSys) {
 			clickableSys->SetLeftClickDetected(true);
-			std::cout << "isClicked : " << clickableSys->IsLeftClickDetected() << std::endl;
+			/*std::cout << "isLeftClicked : " << clickableSys->IsLeftClickDetected() << std::endl;*/
 		}
 	}
 	if (Input::IsMouseButtonJustPressed(input->mouseBindings[InputAction::RIGHT_MOUSE])) {
 		SystemClickable* clickableSys = GameEngine::GetInstance().GetSystem<SystemClickable>();
 		if (clickableSys) {
 			clickableSys->SetRightClickDetected(true);
-			std::cout << "isClicked : " << clickableSys->IsRightClickDetected() << std::endl;
+			/*std::cout << "isRightClicked : " << clickableSys->IsRightClickDetected() << std::endl;*/
 		}
 	}
 }

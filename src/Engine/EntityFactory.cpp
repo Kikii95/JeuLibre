@@ -187,7 +187,7 @@ namespace EntityFactory {
 
         ToolBoxVisual::GetInstance().ApplyVisualConfig(mob);
 
-        // Applique les loots liés au profil
+        // Applique les loots lies au profil
         auto* loot = mob->GetComponent<ComponentLoot>();
         if (loot) {
             const auto& table = LootDatabase::Get().GetLootFor(profileId);

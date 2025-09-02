@@ -17,7 +17,7 @@ void ComponentBuffDebuff::AddEffect(const EffectDefinition* def, const std::stri
     instance.lastTickTime = GameEngine::GetInstance().GetTimer().TotalTime();
     activeEffects.push_back(instance);
 
-    std::cout << "[BuffDebuff] Effet ajouté : " << def->id << " [" << sourceUID << "]\n";
+    std::cout << "[BuffDebuff] Effet ajoute : " << def->id << " [" << sourceUID << "]\n";
 }
 
 

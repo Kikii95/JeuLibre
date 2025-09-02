@@ -85,18 +85,25 @@ void GameEngine::Run() {
 }
 
 void GameEngine::GameLoop() {
-    while (window.isOpen()) {
+    while (isRunning && window.isOpen()) {
         Logs::Get()->Init();
 
         ApplySceneChangeIfNeeded();
+        if (!isRunning || !window.isOpen()) break;
 
-        ProcessEvents();      
+        ProcessEvents();
+        if (!isRunning || !window.isOpen()) break;
+
         Input::Update();
+        if (!isRunning || !window.isOpen()) break;
 
         gameTimer.Tick();
         float dt = gameTimer.DeltaTime();
 
-        systemManager.Update(dt);
+        if (!isRunning || !window.isOpen()) break;
+
+        systemManager.Update(dt);       
+        if (!isRunning || !window.isOpen()) break;
 
         window.clear(sf::Color::Black);
         systemManager.UpdateRender(dt);
@@ -106,8 +113,9 @@ void GameEngine::GameLoop() {
     }
 
     Logs::Get()->UnInit();
-	std::cout << "[GameEngine] Fin de la boucle de jeu.\n";
+    std::cout << "[GameEngine] Fin de la boucle de jeu.\n";
 }
+
 
 
 
@@ -128,11 +136,18 @@ void GameEngine::CleanUp() {
     entityManager.Clear();
 }
 
-void GameEngine::CloseGame() {
-	CloseScene();
-	std::cout << "[GameEngine] Fermeture du jeu.\n";
-	window.close();
+bool GameEngine::IsRunning() {
+	return isRunning;
 }
+
+void GameEngine::CloseGame() {
+    CloseScene();
+    std::cout << "[GameEngine] Fermeture du jeu.\n";
+
+    isRunning = false;    
+    window.close();       
+}
+
 
 void GameEngine::CloseScene() {
     auto all = GetEntityManager().GetAllEntities();

@@ -38,5 +38,5 @@ void TileMapLoader::LoadTilemap(GameEngine* engine, const std::string& mapPath, 
         }
     }
 
-    std::cout << "[Tilemap] Chargée avec succès depuis " << mapPath << std::endl;
+    std::cout << "[Tilemap] Chargee avec succes depuis " << mapPath << std::endl;
 }

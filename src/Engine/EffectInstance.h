@@ -3,11 +3,11 @@
 
 struct EffectInstance {
     std::string effectId;       // ID de l'effet (ex: poison_small_v2)
-    std::string sourceItemUID;  // UID de l’objet ayant appliqué l’effet
-    bool fromEquip = false;     // vrai si ça vient d’un objet équipé
+    std::string sourceItemUID;  // UID de l’objet ayant applique l’effet
+    bool fromEquip = false;     // vrai si ça vient d’un objet equipe
     int remainingTicks = -1;    // -1 = permanent
-    bool applied = false;       // si les effets ont déjà été appliqués
-    float lastTickTime = 0.0f;  // pour gérer le timing entre les ticks
+    bool applied = false;       // si les effets ont deja ete appliques
+    float lastTickTime = 0.0f;  // pour gerer le timing entre les ticks
 
     EffectInstance() = default;
 

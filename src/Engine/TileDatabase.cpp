@@ -30,7 +30,7 @@ bool TileDatabase::LoadFromFile(const std::string& path) {
         tiles[def.id] = def;
     }
 
-    std::cout << "[TileDatabase] " << tiles.size() << " tiles chargées depuis " << path << std::endl;
+    std::cout << "[TileDatabase] " << tiles.size() << " tiles chargees depuis " << path << std::endl;
     return true;
 }
 

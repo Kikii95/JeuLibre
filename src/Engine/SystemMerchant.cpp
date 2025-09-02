@@ -47,7 +47,7 @@ bool SystemMerchant::SellItem(Entity* player, Entity* merchant, const std::strin
 
     if (weapon && weapon->IsEquipped() && weapon->GetWeaponId() == itemId) {
         weapon->Unequip();
-        std::cout << "[Merchant] Objet déséquipé avant vente : " << itemId << std::endl;
+        std::cout << "[Merchant] Objet desequipe avant vente : " << itemId << std::endl;
     }
 
     ItemInstance instanceToSell(itemId, quantity);
@@ -212,7 +212,7 @@ void SystemMerchant::GenerateRandomMerchantStock(Entity* merchant, int itemCount
         merch->AddItem(slot);
     }
 
-    std::cout << "[Merchant] Stock aléatoire généré (" << merch->GetStock().size() << " items)\n";
+    std::cout << "[Merchant] Stock aleatoire genere (" << merch->GetStock().size() << " items)\n";
 }
 
 

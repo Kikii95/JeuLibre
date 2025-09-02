@@ -29,7 +29,7 @@ void SystemSpawner::RegisterSpawnZone(const SpawnZone& zoneData) {
         greenZone->AddComponent<ComponentTag>("SPAWN_PLAYER_DETECT_DEBUG");
     }
 
-    std::cout << "[Spawner][DEBUG] Création zone " << zone.id
+    std::cout << "[Spawner][DEBUG] Creation zone " << zone.id
         << " | Center: (" << zone.center.x << ", " << zone.center.y << ")"
         << " | Radius: " << zone.radius << std::endl;
 
@@ -147,7 +147,7 @@ int SystemSpawner::CountEntitiesInZone(const SpawnZone& zone) {
 void SystemSpawner::SpawnStaticEntity(const std::string& profileId, const sf::Vector2f& center, float radius, float spacing, int count) {
     int maxEntities = static_cast<int>((3.14159f * radius * radius) / (spacing * spacing));
     if (count > maxEntities) {
-        std::cout << "[Spawner] Count demandé (" << count << ") dépasse la capacité max (" << maxEntities << "), ajustement.\n";
+        std::cout << "[Spawner] Count demande (" << count << ") depasse la capacite max (" << maxEntities << "), ajustement.\n";
         count = maxEntities;
     }
 
@@ -186,7 +186,7 @@ void SystemSpawner::SpawnStaticEntity(const std::string& profileId, const sf::Ve
         ++tries;
     }
 
-    std::cout << "[Spawner] Merchants statiques générés : " << spawned << "/" << count << std::endl;
+    std::cout << "[Spawner] Merchants statiques generes : " << spawned << "/" << count << std::endl;
 }
 
 sf::Vector2f SystemSpawner::GetRandomPointInZone(const SpawnZone& zone) {

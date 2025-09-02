@@ -23,6 +23,7 @@ public:
     T* GetSystem();
 
     std::vector<System*> GetAllSystems() const;
+    void RemoveAllSystems();
 
 	void Update(float dt);
     void UpdateActiveSystems(float dt);

@@ -44,7 +44,7 @@ bool Input::IsMouseButtonReleased(sf::Mouse::Button button) {
 
 void Input::ProcessEvent(const std::optional<sf::Event> event) {
     if (event->is<sf::Event::Closed>()) {
-        // Peut-être à rediriger ailleurs ?
+        // Peut-etre a rediriger ailleurs ?
     }
 }
 

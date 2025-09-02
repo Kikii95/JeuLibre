@@ -11,7 +11,7 @@ void SystemEquipment::EquipItem(Entity* entity, const std::string& itemId) {
         });
 
     if (it == inv->GetItems().end()) {
-        std::cout << "[Equip] Aucun item disponible à équiper : " << itemId << "\n";
+        std::cout << "[Equip] Aucun item disponible a equiper : " << itemId << "\n";
         return;
     }
 
@@ -71,7 +71,7 @@ void SystemEquipment::EquipItemByInstance(Entity* entity, const ItemInstance& it
         ApplyEquipmentEffects(entity);
     }
 
-    std::cout << "[Equip] Equipé via UID : " << item.itemId << " (" << item.uid << ")\n";
+    std::cout << "[Equip] Equipe via UID : " << item.itemId << " (" << item.uid << ")\n";
 
     inv->RemoveItemByUID(item.uid);
 
@@ -107,7 +107,7 @@ void SystemEquipment::UnequipSlot(Entity* entity, EquipmentSlot slot) {
         inv->AddItem(restored);
     }
 
-    std::cout << "[Equip] Désequipé UID : " << uid << " (slot " << static_cast<int>(slot) << ")\n";
+    std::cout << "[Equip] Desequipe UID : " << uid << " (slot " << static_cast<int>(slot) << ")\n";
 }
 
 void SystemEquipment::ApplyEquipmentEffects(Entity* entity) {
@@ -136,7 +136,7 @@ void SystemEquipment::ApplyEquipmentEffects(Entity* entity) {
                     << " sur slot " << static_cast<int>(slot) << "\n";
 
                 buff->AddEffect(effect, "EQUIP_SLOT_" + std::to_string(static_cast<int>(slot)), true);
-                std::cout << "[Equipment] Effet principal appliqué : " << item->effectId << "\n";
+                std::cout << "[Equipment] Effet principal applique : " << item->effectId << "\n";
             }
             else {
                 std::cout << "[Equipment] Effet introuvable : " << item->effectId << "\n";
@@ -151,7 +151,7 @@ void SystemEquipment::ApplyEquipmentEffects(Entity* entity) {
                     << " sur slot " << static_cast<int>(slot) << "\n";
 
                 buff->AddEffect(effect, "EQUIP_SLOT_" + std::to_string(static_cast<int>(slot)), true);
-                std::cout << "[Equipment] Effet secondaire appliqué : " << eid << "\n";
+                std::cout << "[Equipment] Effet secondaire applique : " << eid << "\n";
             }
             else {
                 std::cout << "[Equipment] Effet secondaire introuvable : " << eid << "\n";
@@ -159,7 +159,7 @@ void SystemEquipment::ApplyEquipmentEffects(Entity* entity) {
         }
     }
 
-    std::cout << "[Equipment] Tous les effets d’équipement ont été appliqués.\n";
+    std::cout << "[Equipment] Tous les effets d’equipement ont ete appliques.\n";
 }
 
 
@@ -205,7 +205,7 @@ void SystemEquipment::Logs() {
         ++weaponUsageCount[weaponId];
     }
 
-    HEAD("sys_WEAPON") << "Entités avec arme équipée : " << armedCount << ENDL;
+    HEAD("sys_WEAPON") << "Entites avec arme equipee : " << armedCount << ENDL;
 
     for (const auto& [weaponId, count] : weaponUsageCount) {
         const auto* def = ItemDatabase::Get().GetItem(weaponId);
@@ -213,6 +213,6 @@ void SystemEquipment::Logs() {
 
         HEAD("sys_WEAPON") << "- " << (char*)name.c_str()
             << " (" << (char*)weaponId.c_str() << ") : "
-            << count << " entité(s)" << ENDL;
+            << count << " entite(s)" << ENDL;
     }
 }

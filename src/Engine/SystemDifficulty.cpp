@@ -60,7 +60,7 @@ void SystemDifficulty::ApplyToEntity(Entity* entity, float timeModifier) {
 	//	<< " | Zone: " << zoneName
 	//	<< " | Modificateur temps: " << timeModifier
 	//	<< " | Modificateur zone: " << zoneModifier
-	//	<< " | Difficulté effective: " << effective
+	//	<< " | Difficulte effective: " << effective
 	//	<< ENDL;
 
 }

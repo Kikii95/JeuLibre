@@ -45,7 +45,7 @@ void SystemInventory::DropSelectedItem(Entity* player) {
     auto* equipSys = GameEngine::GetInstance().GetSystem<SystemEquipment>();
     if (equip && equipSys && instance.isEquipped) {
         equipSys->UnequipSlot(player, def->equipmentSlot);
-        std::cout << "[Inventory] Objet déséquipé avant drop : " << instance.itemId << "\n";
+        std::cout << "[Inventory] Objet desequipe avant drop : " << instance.itemId << "\n";
     }
 
     inv->RemoveItem(instance.itemId, 1);
@@ -189,7 +189,7 @@ void SystemInventory::DisplayInventory(Entity* player) {
         std::string suffix;
 
         if (instance.isEquipped)
-            suffix += " [équipé]";
+            suffix += " [equipe]";
 
         auto* merchantSys = GameEngine::GetInstance().GetSystem<SystemMerchant>();
         if (merchantSys && merchantSys->IsMerchantVisible()) {
@@ -240,16 +240,16 @@ const ItemDefinition* SystemInventory::ResolveEquippedItemDefinition(Entity* ent
     }
 
     // S’il n’est pas dans l’inventaire, on n’a plus le itemId
-    // => Parcourir les slots équipés pour retrouver le bon
+    // => Parcourir les slots equipes pour retrouver le bon
     auto* equip = entity->GetComponent<ComponentEquipment>();
     if (!equip) return nullptr;
 
     for (const auto& [slot, storedUid] : equip->GetAll()) {
         if (storedUid.first == uid) {
             // On suppose que le slot contient le bon uid
-            // Pas d’itemId, mais tu peux éventuellement stocker une map secondaire {uid  itemId}
+            // Pas d’itemId, mais tu peux eventuellement stocker une map secondaire {uid  itemId}
             // ou bien... fallback sur ??? ici
-            // Tu pourrais aussi stocker le dernier ItemInstance équipé dans le composant équipement
+            // Tu pourrais aussi stocker le dernier ItemInstance equipe dans le composant equipement
             break;
         }
     }

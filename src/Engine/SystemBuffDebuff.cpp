@@ -57,12 +57,12 @@ void SystemBuffDebuff::Update(float dt, const std::vector<Entity*>& entities) {
 
                 if (def->tickDamage > 0) {
                     healthSys->ApplyDamage(entity, def->tickDamage);
-                    std::cout << "[BuffDebuff] " << def->id << " inflige " << def->tickDamage << " dégâts.\n";
+                    std::cout << "[BuffDebuff] " << def->id << " inflige " << def->tickDamage << " degâts.\n";
                 }
 
                 if (def->tickHeal > 0) {
                     healthSys->Heal(entity, def->tickHeal);
-                    std::cout << "[BuffDebuff] " << def->id << " régénère " << def->tickHeal << " PV.\n";
+                    std::cout << "[BuffDebuff] " << def->id << " regenere " << def->tickHeal << " PV.\n";
                 }
 
                 if (!effect.fromEquip && --effect.remainingTicks <= 0) {
@@ -76,8 +76,8 @@ void SystemBuffDebuff::Update(float dt, const std::vector<Entity*>& entities) {
             buff->RemoveEffect(id, false);
             std::cout << "[BuffDebuff::Update] Suppression effet : " << id << " (depuis Update)\n";
             statsSys->RemoveModifierGroup(entity, id, false);
-            std::cout << "[BuffDebuff] Effet expiré : " << id << "\n";
-            std::cout << "[BuffDebuff] Modif de stats retirée : " << id << "\n";
+            std::cout << "[BuffDebuff] Effet expire : " << id << "\n";
+            std::cout << "[BuffDebuff] Modif de stats retiree : " << id << "\n";
         }
     }
 }

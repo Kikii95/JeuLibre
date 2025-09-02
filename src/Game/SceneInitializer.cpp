@@ -28,7 +28,7 @@ void SceneInitializer::LoadMap(GameEngine* engine, MapType type) {
 		dot->GetComponent<ComponentRender>()->SetTexture("../../res/Game/fullmap.png");
 		dot->GetComponent<ComponentRender>()->SetRenderType(RenderType::Sprite);
 
-		std::cout << "[SceneInitializer] WorldMap affichée avec fullmap.png" << std::endl;
+		std::cout << "[SceneInitializer] WorldMap affichee avec fullmap.png" << std::endl;
 		return;
 	}
 
@@ -54,7 +54,7 @@ void SceneInitializer::LoadMap(GameEngine* engine, MapType type) {
 		spawnerPath = "../../res/spawner_CressentIsland.json";
 		break;
 	default:
-		std::cerr << "[SceneInitializer] MapType inconnu. Aucun chargement effectué.\n";
+		std::cerr << "[SceneInitializer] MapType inconnu. Aucun chargement effectue.\n";
 		return;
 	}
 

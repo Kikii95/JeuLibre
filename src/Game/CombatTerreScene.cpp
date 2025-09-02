@@ -70,7 +70,7 @@ void CombatTerreScene::OnInit()
 	for (const auto& pair : hexGridCoordinates) {
 		const sf::Vector2f& pos = pair.second;
 
-		// Vérifie si la case est déjà occupée par une entité (joueur, ennemi, etc.)
+		// Verifie si la case est deja occupee par une entite (joueur, ennemi, etc.)
 		bool caseLibre = true;
 		for (Entity* e : mpGameEngine->GetEntityManager().GetAllEntities()) {
 			if (!e->HasComponent<ComponentTransform>()) continue;
@@ -94,12 +94,12 @@ void CombatTerreScene::OnInit()
 		sf::Vector2i coord = positionsDisponibles[i];
 		sf::Vector2f pos = hexGridCoordinates[coord];
 
-		// Choisir un profil aléatoire
+		// Choisir un profil aleatoire
 		std::string profileId = enemyProfiles[rand() % enemyProfiles.size()];
 
 		SpawnZone zone;
 
-		// Créer l'ennemi via EntityFactory
+		// Creer l'ennemi via EntityFactory
 		Entity* enemy = EntityFactory::CreateEnemy(zone.id, profileId, zone.difficultyZone, pos);
 
 		// Ajout d’un label texte pour debug (facultatif)
@@ -352,7 +352,7 @@ void CombatTerreScene::DisplaySelectMenu(Entity* entity) {
 							//if (clickable)
 							//{
 							//	clickable->SetOnRightClick([this, entity]() {
-							//		std::cout << "annulé" << std::endl;
+							//		std::cout << "annule" << std::endl;
 							//	});
 							//}
 						}

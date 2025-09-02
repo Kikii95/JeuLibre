@@ -17,7 +17,7 @@ bool ToolBoxAssets::LoadImageFromFile(const std::string& filePath, sf::Image& im
 bool ToolBoxAssets::LoadFontFromFile(const std::string& path, const std::string& name) {
     sf::Font font;
     if (!font.openFromFile(path)) {
-        std::cerr << "[ERROR] Échec du chargement de la police : " << path << "\n";
+        std::cerr << "[ERROR] echec du chargement de la police : " << path << "\n";
         return false;
     }
     fontCache[name] = std::move(font);
@@ -53,7 +53,7 @@ sf::Font* ToolBoxAssets::GetFont(const std::string& name) {
     if (it != fontCache.end()) {
         return &it->second;
     }
-    std::cerr << "[WARN] Police non trouvée : " << name << "\n";
+    std::cerr << "[WARN] Police non trouvee : " << name << "\n";
     return nullptr;
 }
 
@@ -81,9 +81,9 @@ void ToolBoxAssets::PreloadFonts() {
 
     for (int size = 8; size <= 50; ++size) {
         dummy.setCharacterSize(size);
-        dummy.setString("Préchargement");
+        dummy.setString("Prechargement");
         sf::FloatRect bounds = dummy.getLocalBounds(); 
     }
 
-    std::cout << "[Font] Préchargement des tailles terminé." << std::endl;
+    std::cout << "[Font] Prechargement des tailles termine." << std::endl;
 }

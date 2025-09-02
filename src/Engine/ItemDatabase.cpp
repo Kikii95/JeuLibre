@@ -148,7 +148,7 @@ std::string EquipmentSlotToString(EquipmentSlot slot) {
 
 std::string LocalizedSlotName(EquipmentSlot slot) {
     static std::map<EquipmentSlot, std::string> localized = {
-        {EquipmentSlot::Head, "Tête"},
+        {EquipmentSlot::Head, "Tete"},
         {EquipmentSlot::Chest, "Buste"},
         {EquipmentSlot::Legs, "Jambes"},
         {EquipmentSlot::Feet, "Pieds"},

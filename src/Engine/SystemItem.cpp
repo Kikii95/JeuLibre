@@ -37,7 +37,7 @@ void SystemItem::PickupItem(Entity* picker, Entity* itemEntity) {
 
     const ItemInstance& instance = itemComp->instance;
     if (inv->AddItem(instance)) {
-        std::cout << "[SystemItem] Objet ramassé : " << instance.itemId << " x" << instance.quantity << std::endl;
+        std::cout << "[SystemItem] Objet ramasse : " << instance.itemId << " x" << instance.quantity << std::endl;
         GameEngine::GetInstance().GetEntityManager().DestroyEntity(itemEntity);
 
         GameEngine::GetInstance().GetSystem<SystemInventory>()->UpdateInventory(picker);

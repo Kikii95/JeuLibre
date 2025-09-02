@@ -95,7 +95,7 @@ int SystemCombat::CalculateDamage(Entity* attacker, Entity* target, bool& hitSuc
 
     if (!isSuccess && !isSelfHit) {
         hitSuccess = false;
-        std::cout << "[Combat] Attaque ratée.\n";
+        std::cout << "[Combat] Attaque ratee.\n";
         return 0;
     }
     else {
@@ -121,9 +121,9 @@ int SystemCombat::CalculateDamage(Entity* attacker, Entity* target, bool& hitSuc
     std::cout << "[Combat] CRIT = " << critChance << "% | ACC = " << accuracy << "%\n";
     std::cout << "[Combat] Ratio = " << ratio << " | Variance = " << variance << "\n";
     if (isCrit) std::cout << "[Combat] Coup critique (x1.5)\n";
-    if (isPerfectHit) std::cout << "[Combat] Réussite critique (x2)\n";
-    if (isSelfHit) std::cout << "[Combat] Échec critique ! L'attaquant se blesse.\n";
-    std::cout << "[Combat] Dégâts finaux infligés : " << finalDamage << "\n";
+    if (isPerfectHit) std::cout << "[Combat] Reussite critique (x2)\n";
+    if (isSelfHit) std::cout << "[Combat] echec critique ! L'attaquant se blesse.\n";
+    std::cout << "[Combat] Degâts finaux infliges : " << finalDamage << "\n";
     std::cout << "[Combat] ----------------------------\n";
 
     if (isSelfHit) {

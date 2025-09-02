@@ -22,6 +22,8 @@ public:
     void Run();
     void CleanUp();
 
+    bool IsRunning();
+
 	void CloseGame();
 	void CloseScene();
     
@@ -39,7 +41,8 @@ private:
     GameEngine() = default; 
     ~GameEngine() = default;
 
-	sf::Vector2f windowSize = { 3840.f, 2160.f };
+	/*sf::Vector2f windowSize = { 3840.f, 2160.f };*/
+    sf::Vector2f windowSize = { 1920.f, 1080.f };
 
     sf::RenderWindow window; 
     SystemManager systemManager;
